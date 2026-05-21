@@ -1,0 +1,27 @@
+# deps
+node_modules
+.pnp
+.pnp.*
+.yarn/*
+
+# testing
+coverage
+
+# next
+.next/
+out/
+build
+dist
+
+# env
+.env
+.env.local
+.env.*.local
+
+# misc
+.DS_Store
+*.pem
+.vercel
+.turbo
+*.tsbuildinfo
+next-env.d.ts
