@@ -16,7 +16,7 @@
   --color-divider: #ddd5c4;
 
   /* Crimson accent ramp, used for the wordmark gradient, the
-     Demos badge, the Standard depth pill, the submit button
+     examples badge, the Standard depth pill, the submit button
      gradient, and focus rings. All other colors compose from
      it via opacity. */
   --color-accent-50: #fff1ec;
@@ -74,6 +74,28 @@
   select {
     font-family: inherit;
     letter-spacing: inherit;
+  }
+
+  .material-symbols-rounded {
+    display: inline-block;
+    direction: ltr;
+    font-family: "Material Symbols Rounded";
+    font-feature-settings: "liga";
+    font-size: 1em;
+    font-style: normal;
+    font-variation-settings:
+      "FILL" 0,
+      "wght" 500,
+      "GRAD" 0,
+      "opsz" 24;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1;
+    overflow-wrap: normal;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
   }
 }
 
@@ -149,8 +171,8 @@
 }
 
 @keyframes page-rise {
-  from { opacity: 0; transform: translateY(8px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 @keyframes aurora-rotate {
