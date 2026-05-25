@@ -14,7 +14,7 @@ export function SiteHeader() {
   }
 
   return (
-    <header className="sticky top-0 z-50 border-b border-ink/10 bg-[#fbf3ea]/90 backdrop-blur-xl">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-ink/10 bg-[#fbf3ea]/90 backdrop-blur-xl lg:sticky">
       <nav className="mx-auto flex h-14 max-w-[1160px] items-center justify-between gap-2 pl-3 pr-5 sm:px-6">
         <div className="flex min-w-0 items-center gap-1.5 sm:gap-2">
           {homeHasDesktopSidebar && (

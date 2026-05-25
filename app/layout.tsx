@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="relative min-h-screen antialiased">
         <Background />
         <SiteHeader />
-        <div className="relative">{children}</div>
+        <div className="relative pt-14 lg:pt-0">{children}</div>
       </body>
     </html>
   );
