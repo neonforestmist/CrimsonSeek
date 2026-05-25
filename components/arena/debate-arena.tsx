@@ -558,12 +558,12 @@ export function DebateArena() {
 
   return (
     <section
-      className={`h-full min-h-0 w-full overflow-hidden transition-[padding] duration-200 ${
+      className={`min-h-[calc(100dvh-56px)] w-full overflow-visible transition-[padding] duration-200 lg:h-full lg:min-h-0 lg:overflow-hidden ${
         desktopStarterSidebarOpen ? "lg:pl-[320px] 2xl:pl-[340px]" : "lg:pl-[86px]"
       }`}
     >
       <div
-        className={`grid h-full min-h-0 min-w-0 gap-0 p-3 sm:p-4 lg:items-stretch lg:p-5 ${
+        className={`grid min-h-[calc(100dvh-56px)] min-w-0 gap-0 p-3 sm:p-4 lg:h-full lg:min-h-0 lg:items-stretch lg:p-5 ${
           showEvidenceRail
             ? "lg:grid-cols-[minmax(0,1fr)_340px] 2xl:grid-cols-[minmax(0,1fr)_360px]"
             : "lg:grid-cols-[minmax(0,1fr)]"
@@ -595,7 +595,7 @@ export function DebateArena() {
 
         <main
           id="thread"
-          className={`flex h-full min-h-0 min-w-0 scroll-mt-24 flex-col overflow-hidden rounded-lg border border-divider/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(255,255,255,0.78))] shadow-[0_1px_2px_rgba(21,18,14,0.05),0_26px_62px_-38px_rgba(21,18,14,0.48)] ${
+          className={`flex min-h-[calc(100dvh-80px)] min-w-0 scroll-mt-24 flex-col overflow-visible rounded-lg border border-divider/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(255,255,255,0.78))] shadow-[0_1px_2px_rgba(21,18,14,0.05),0_26px_62px_-38px_rgba(21,18,14,0.48)] lg:h-full lg:min-h-0 lg:overflow-hidden ${
             showEvidenceRail ? "xl:mr-0 xl:rounded-r-none xl:border-r-0" : ""
           }`}>
             <div className="flex-shrink-0 border-b border-divider/70 bg-white/74 px-4 py-3 sm:px-5">
@@ -630,7 +630,7 @@ export function DebateArena() {
             <div
               ref={scrollRef}
               className={`min-h-0 bg-[radial-gradient(circle_at_50%_0%,rgba(217,79,48,0.08),transparent_35%)] px-4 py-4 sm:px-5 ${
-                messages.length > 0 ? "flex-1 overflow-y-auto overscroll-contain" : "flex-1"
+                messages.length > 0 ? "lg:flex-1 lg:overflow-y-auto lg:overscroll-contain" : "flex-1"
               }`}
             >
               {messages.length === 0 && !loading ? (

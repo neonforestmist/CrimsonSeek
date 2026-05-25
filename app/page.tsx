@@ -4,7 +4,7 @@ export default function HomePage() {
   return (
     <main
       id="debate"
-      className="relative h-[calc(100dvh-56px)] min-h-0 overflow-hidden"
+      className="relative min-h-[calc(100dvh-56px)] overflow-visible lg:h-[calc(100dvh-56px)] lg:min-h-0 lg:overflow-hidden"
     >
       <DebateArena />
     </main>
