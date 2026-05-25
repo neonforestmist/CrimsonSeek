@@ -2,25 +2,42 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight, Github, Menu } from "lucide-react";
 import { LinkupLogo } from "@/components/linkup-logo";
 
 export function SiteHeader() {
   const pathname = usePathname();
   const homeHasDesktopSidebar = pathname === "/";
 
+  function openMobileStarters() {
+    window.dispatchEvent(new CustomEvent("crimsonseek:open-mobile-starters"));
+  }
+
   return (
     <header className="sticky top-0 z-50 border-b border-ink/10 bg-[#fbf3ea]/90 backdrop-blur-xl">
       <nav className="mx-auto flex h-14 max-w-[1160px] items-center justify-between px-4 sm:px-6">
-        <Link
-          href="/"
-          className={`flex min-w-0 items-center gap-2 text-[15px] font-semibold text-accent-600 transition-opacity hover:opacity-75 ${
-            homeHasDesktopSidebar ? "lg:pointer-events-none lg:invisible" : ""
-          }`}
-        >
-          <ExploreMark />
-          <span className="truncate">CrimsonSeek</span>
-        </Link>
+        <div className="flex min-w-0 items-center gap-2">
+          {homeHasDesktopSidebar && (
+            <button
+              type="button"
+              onClick={openMobileStarters}
+              aria-label="Open debate starters"
+              className="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md text-ink-soft transition-colors hover:bg-ink/6 hover:text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500/25 lg:hidden"
+            >
+              <Menu className="h-5 w-5" />
+            </button>
+          )}
+
+          <Link
+            href="/"
+            className={`flex min-w-0 items-center gap-2 text-[15px] font-semibold text-accent-600 transition-opacity hover:opacity-75 ${
+              homeHasDesktopSidebar ? "lg:pointer-events-none lg:invisible" : ""
+            }`}
+          >
+            <ExploreMark />
+            <span className="truncate">CrimsonSeek</span>
+          </Link>
+        </div>
 
         <div className="flex items-center gap-1.5 sm:gap-3">
           <Link

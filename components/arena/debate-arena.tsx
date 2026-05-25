@@ -217,6 +217,18 @@ export function DebateArena() {
     };
   }, [mobileStarterSidebarOpen, showEvidenceRail]);
 
+  useEffect(() => {
+    function openMobileStarterSidebar() {
+      setEvidenceRailOpen(false);
+      setMobileStarterSidebarOpen(true);
+    }
+
+    window.addEventListener("crimsonseek:open-mobile-starters", openMobileStarterSidebar);
+    return () => {
+      window.removeEventListener("crimsonseek:open-mobile-starters", openMobileStarterSidebar);
+    };
+  }, []);
+
   function selectArena(arena: ArenaPreset) {
     setSelectedArenaId(arena.id);
     setSelectedSideIndex(0);
@@ -589,20 +601,6 @@ export function DebateArena() {
             <div className="flex-shrink-0 border-b border-divider/70 bg-white/74 px-4 py-3 sm:px-5">
               <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                 <div className="flex min-w-0 items-start gap-3">
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setEvidenceRailOpen(false);
-                      setMobileStarterSidebarOpen(true);
-                    }}
-                    aria-controls="mobile-starter-sidebar"
-                    aria-expanded={mobileStarterSidebarOpen}
-                    aria-label="Open debate starters drawer"
-                    className="inline-flex h-9 flex-shrink-0 items-center justify-center gap-2 rounded-md bg-ink px-3 text-xs font-semibold text-canvas shadow-[0_1px_2px_rgba(21,18,14,0.16)] transition-colors hover:bg-ink-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500/25 lg:hidden"
-                  >
-                    <Menu className="h-4 w-4" />
-                    Starters
-                  </button>
                   <div className="min-w-0">
                     <div className="flex items-center gap-2 text-sm font-semibold text-ink">
                       <MaterialSymbol className="text-[18px] text-accent-600">forum</MaterialSymbol>
