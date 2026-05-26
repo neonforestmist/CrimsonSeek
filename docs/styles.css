@@ -902,158 +902,12 @@ pre code {
   min-height: calc(100dvh - 3.5rem);
 }
 
-.audit-starter-sidebar {
-  position: fixed;
-  inset: 0 auto 0 0;
-  z-index: 30;
-  display: flex;
-  width: 320px;
-  height: 100dvh;
-  min-height: 0;
-  flex-direction: column;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-  background: var(--ink);
-  color: var(--canvas);
-  padding: 0.75rem;
-  box-shadow:
-    0 1px 2px rgba(21, 18, 14, 0.12),
-    0 28px 72px -36px rgba(21, 18, 14, 0.72);
+.audit-layout {
+  display: block;
 }
 
 .source-backdrop {
   display: none;
-}
-
-.sidebar-brand,
-.sidebar-primary,
-.sidebar-item {
-  display: flex;
-  align-items: center;
-  color: inherit;
-  text-decoration: none;
-}
-
-.sidebar-brand {
-  justify-content: flex-start;
-  gap: 0.65rem;
-  padding: 0.15rem 0 1.55rem;
-  font-size: 1.06rem;
-  font-weight: 700;
-}
-
-.sidebar-brand .brand-mark {
-  width: 2rem;
-  height: 2rem;
-  border-color: rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--accent-300);
-  font-size: 1.35rem;
-}
-
-.sidebar-primary,
-.sidebar-item {
-  gap: 0.75rem;
-  border-radius: 0.38rem;
-  padding: 0.48rem 0.62rem;
-  font-size: 0.95rem;
-  font-weight: 680;
-  transition:
-    background 160ms ease,
-    color 160ms ease;
-}
-
-.sidebar-primary {
-  margin-bottom: 1.45rem;
-  background: rgba(255, 255, 255, 0.12);
-  color: white;
-}
-
-.sidebar-section-label {
-  margin: 0 0 0.65rem;
-  padding: 0 0.62rem;
-  color: rgba(245, 238, 226, 0.38);
-  font-size: 0.7rem;
-  font-weight: 750;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
-.sidebar-list {
-  min-height: 0;
-  overflow-y: auto;
-}
-
-.sidebar-item {
-  min-height: 3.38rem;
-  color: rgba(245, 238, 226, 0.74);
-}
-
-.sidebar-item:hover,
-.sidebar-item.is-selected {
-  background: rgba(255, 255, 255, 0.12);
-  color: white;
-}
-
-.sidebar-item span:nth-child(2) {
-  min-width: 0;
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.sidebar-dot {
-  width: 0.5rem;
-  height: 0.5rem;
-  flex: 0 0 auto;
-  border-radius: 999px;
-  background: var(--accent-300);
-}
-
-.mini-arena-mark {
-  position: relative;
-  display: inline-flex;
-  width: 2rem;
-  height: 2rem;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border: 1px solid var(--accent-100);
-  border-radius: 0.42rem;
-  background: rgba(255, 241, 236, 0.76);
-  color: var(--accent-700);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.72),
-    0 1px 2px rgba(21, 18, 14, 0.05);
-}
-
-.mini-arena-mark.is-active {
-  border-color: var(--accent-500);
-  background: var(--accent-500);
-  color: white;
-}
-
-.mini-arena-mark svg {
-  width: 1.35rem;
-  height: 1.35rem;
-  fill: currentColor;
-}
-
-.mini-arena-mark .stroke-svg {
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2.2;
-}
-
-.mini-arena-mark .material-symbols-rounded {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.35rem;
-  line-height: 1;
 }
 
 .audit-workspace {
@@ -1062,12 +916,11 @@ pre code {
   min-width: 0;
   min-height: calc(100dvh - 3.5rem);
   gap: 0;
-  margin-left: 320px;
   padding: 1rem;
 }
 
 .audit-workspace.has-sources {
-  grid-template-columns: minmax(0, 1fr) 340px;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 30vw);
 }
 
 .debate-thread-panel,
@@ -1541,40 +1394,9 @@ pre code {
   line-height: 1.6;
 }
 
-@media (max-width: 1180px) {
-  .audit-starter-sidebar {
-    width: 86px;
-    align-items: center;
-  }
-
-  .audit-workspace {
-    margin-left: 86px;
-  }
-
-  .sidebar-brand span:last-child,
-  .sidebar-primary span:last-child,
-  .sidebar-section-label,
-  .sidebar-item span:nth-child(2),
-  .sidebar-dot {
-    display: none;
-  }
-
-  .sidebar-brand,
-  .sidebar-primary,
-  .sidebar-item {
-    justify-content: center;
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
 @media (max-width: 980px) {
   .audit-app-grid {
     display: block;
-  }
-
-  .audit-starter-sidebar {
-    display: none;
   }
 
   .audit-workspace,
