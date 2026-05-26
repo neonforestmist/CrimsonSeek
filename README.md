@@ -12,6 +12,14 @@ It works using a Gemini-powered opponent that reads your position, chooses the o
 
 The project includes example debate audits that show CrimsonSeek in action with saved countercases and source panels.
 
+## Demo Page
+
+This repo includes a static demo site in [`docs`](./docs). It mirrors the README and the examples page with plain HTML, CSS, and JavaScript so it can be published through GitHub Pages without running the Next.js app.
+
+The test site is available at:
+
+[https://neonforestmist.github.io/CrimsonSeek/](https://neonforestmist.github.io/CrimsonSeek/)
+
 ## Product
 
 - **Debate-first flow:** Pick a starter or bring anything, then argue with CrimsonSeek in a thread.

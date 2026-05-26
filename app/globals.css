@@ -97,6 +97,14 @@
     white-space: nowrap;
     -webkit-font-smoothing: antialiased;
   }
+
+  .brand-sword-mark .material-symbols-rounded,
+  .brand-sword-mark.material-symbols-rounded {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
 }
 
 @layer utilities {

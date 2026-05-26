@@ -64,11 +64,11 @@ export function SiteHeader() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Linkup"
-            className="inline-flex h-9 w-9 items-center justify-center gap-2 rounded-full bg-accent-500 text-white shadow-[0_1px_2px_rgba(150,47,24,0.18),0_8px_18px_-12px_rgba(217,79,48,0.75)] transition-colors hover:bg-accent-600 sm:w-auto sm:px-3.5"
+            className="inline-flex h-9 w-[4.6rem] flex-shrink-0 items-center justify-center text-accent-500 transition-colors hover:text-accent-600 sm:w-auto sm:gap-2 sm:rounded-full sm:bg-accent-500 sm:px-3.5 sm:text-white sm:shadow-[0_1px_2px_rgba(150,47,24,0.18),0_8px_18px_-12px_rgba(217,79,48,0.75)] sm:hover:bg-accent-600"
           >
             <LinkupLogo
-              variant="icon"
-              className="h-[17px] w-[23px] text-white sm:hidden"
+              variant="full"
+              className="h-[18px] w-auto sm:hidden"
             />
             <LinkupLogo
               variant="full"
@@ -86,7 +86,7 @@ function ExploreMark() {
   return (
     <span
       aria-hidden
-      className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border border-accent-200 bg-accent-50 text-accent-600 shadow-[inset_0_1px_0_rgba(255,255,255,0.72),0_1px_2px_rgba(150,47,24,0.08)]"
+      className="brand-sword-mark flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border border-accent-200 bg-accent-50 text-accent-600 shadow-[inset_0_1px_0_rgba(255,255,255,0.72),0_1px_2px_rgba(150,47,24,0.08)]"
     >
       <span className="material-symbols-rounded text-[15px] leading-none">
         swords
