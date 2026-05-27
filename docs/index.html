@@ -24,6 +24,10 @@
         <div class="nav-actions">
           <a class="nav-link" href="./examples.html">Examples</a>
           <span class="divider" aria-hidden="true"></span>
+          <a class="github-pill linkup-pill" href="https://linkup.so" aria-label="Linkup">
+            <img src="./assets/linkup-logo.svg" alt="" />
+            <span>Linkup</span>
+          </a>
           <a class="github-pill" href="https://github.com/neonforestmist/CrimsonSeek" aria-label="GitHub repository">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 8.36 22.9c.58.11.79-.25.79-.56v-2.15c-3.22.7-3.9-1.37-3.9-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.57-.29-5.27-1.28-5.27-5.72 0-1.26.45-2.3 1.2-3.1-.12-.3-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18A11.08 11.08 0 0 1 12 5.95c.98 0 1.96.13 2.88.39 2.2-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.06.75.8 1.2 1.84 1.2 3.1 0 4.45-2.7 5.43-5.28 5.72.42.36.78 1.07.78 2.16v3.14c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
             <span>GitHub</span>
@@ -57,12 +61,12 @@
         </div>
         <div class="screenshot-grid">
           <figure>
-            <img src="./assets/readme-home.png" alt="CrimsonSeek home page" />
-            <figcaption>CrimsonSeek home page</figcaption>
+            <img src="./assets/readme-home.png" alt="CrimsonSeek evidence audit with source panel" />
+            <figcaption>CrimsonSeek evidence audit with source panel</figcaption>
           </figure>
           <figure>
-            <img src="./assets/readme-examples.png" alt="CrimsonSeek examples page" />
-            <figcaption>CrimsonSeek examples page</figcaption>
+            <img src="./assets/readme-examples.png" alt="CrimsonSeek evidence audits page" />
+            <figcaption>CrimsonSeek evidence audits page</figcaption>
           </figure>
         </div>
       </section>
@@ -82,8 +86,8 @@
             <p>Gemini 3.1 Flash Lite handles the debate logic because Google AI Studio's free tier has generous rate limits.</p>
           </article>
           <article>
-            <h3>Fast evidence retrieval</h3>
-            <p>CrimsonSeek uses the Linkup Search API with <code>depth: "fast"</code> for quick, low-latency source checks.</p>
+            <h3>Adaptive evidence retrieval</h3>
+            <p>Gemini decides whether a claim needs Linkup, how many sources are useful, and how recent the search should be before CrimsonSeek retrieves evidence.</p>
           </article>
           <article>
             <h3>Credible-source posture</h3>
@@ -91,7 +95,7 @@
           </article>
           <article>
             <h3>Inspectable sources</h3>
-            <p>A response can show <code>Sources: 1 2 3</code>; selecting one opens the source panel for that exact evidence.</p>
+            <p>Inline citation anchors and the Sources control open the exact evidence card behind a counterargument.</p>
           </article>
           <article>
             <h3>Exportable threads</h3>
@@ -109,8 +113,8 @@
           CrimsonSeek uses
           <a href="https://docs.linkup.so/pages/documentation/endpoints/search/reference">Linkup Search</a>
           for live web grounding. The app requests sourced answers from
-          <code>/v1/search</code>, asks for inline citations, and keeps the
-          search depth on <code>fast</code> for quick, responsive debate latency.
+          <code>/v1/search</code>, asks for citation-ready material, and uses
+          adaptive depth with recent-first windows for fast-moving debates.
           Query guidance and domain filtering push results toward high-quality,
           evidence-bearing sources.
         </p>

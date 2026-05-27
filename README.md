@@ -6,9 +6,9 @@ It works using a Gemini-powered opponent that reads your position, chooses the o
 
 ## Demo
 
-![CrimsonSeek home page](./public/readme-home.png)
+![CrimsonSeek evidence audit with source panel](./public/readme-home.png)
 
-![CrimsonSeek examples page](./public/readme-examples.png)
+![CrimsonSeek evidence audits page](./public/readme-examples.png)
 
 The project includes example debate audits that show CrimsonSeek in action with saved countercases and source panels.
 
@@ -24,14 +24,14 @@ The test site is available at:
 
 - **Debate-first flow:** Pick a starter or bring anything, then argue with CrimsonSeek in a thread.
 - **AI stack:** Gemini 3.1 Flash Lite handles the debate logic because Google AI Studio's free tier has generous rate limits.
-- **Fast evidence retrieval:** CrimsonSeek uses the Linkup Search API with `depth: "fast"` for quick, low-latency source checks.
+- **Adaptive evidence retrieval:** Gemini decides whether Linkup is needed, how many sources are useful, and how recent the source trail should be before CrimsonSeek retrieves evidence.
 - **Credible-source posture:** The retrieval prompt and source-quality filter prefer primary sources, institutional reports, reputable reporting, benchmarks, documentation, and expert analysis over SEO spam or thin summaries.
-- **Inspectable sources:** A response can show `Sources: 1 2 3`; selecting one opens the source panel for that exact piece of evidence.
+- **Inspectable sources:** Inline citation anchors and the Sources control open the exact evidence card behind a counterargument.
 - **Exportable threads:** Debates can be exported as a PDF for review or sharing.
 
 ## Linkup
 
-CrimsonSeek uses [Linkup Search](https://docs.linkup.so/pages/documentation/endpoints/search/reference) for live web grounding. The app requests sourced answers from `/v1/search`, asks for inline citations, and keeps the search depth on `fast` for quick, responsive debate latency. Query guidance and domain filtering push results toward high-quality, evidence-bearing sources.
+CrimsonSeek uses [Linkup Search](https://docs.linkup.so/pages/documentation/endpoints/search/reference) for live web grounding. The app requests sourced answers from `/v1/search`, asks for citation-ready material, and uses adaptive depth with recent-first windows for fast-moving debates. Query guidance and domain filtering push results toward high-quality, evidence-bearing sources.
 
 ## How to run it locally
 

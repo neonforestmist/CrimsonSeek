@@ -14,6 +14,7 @@ type ArenaMarkProps = {
 const baseMark =
   "relative inline-flex flex-shrink-0 items-center justify-center overflow-hidden rounded-md border shadow-[inset_0_1px_0_rgba(255,255,255,0.72),0_1px_2px_rgba(21,18,14,0.05)]";
 const singleIconClass = "h-[22px] w-[22px]";
+const duoIconClass = "h-[13px] w-[13px]";
 
 export function ArenaMark({ id, active = false, className = "" }: ArenaMarkProps) {
   const tone = active
@@ -32,7 +33,12 @@ function renderMark(id: ArenaId) {
     case "chatgpt-claude":
       return <OpenAIMark className={singleIconClass} />;
     case "mac-windows":
-      return <WindowsMark className={singleIconClass} />;
+      return (
+        <span className="inline-flex items-center gap-0.5">
+          <AppleMark className={duoIconClass} />
+          <WindowsMark className={duoIconClass} />
+        </span>
+      );
     case "iphone-android":
       return <IPhoneMark className={singleIconClass} />;
     case "ai-jobs":
@@ -74,6 +80,20 @@ function WindowsMark({ className = "" }: { className?: string }) {
     >
       <title>Windows</title>
       <path d="M3,12V6.75L9,5.43v6.48L3,12M20,3v8.75L10,11.9V5.21L20,3M3,13l6,.09V19.9L3,18.75V13m17,.25V22L10,20.09v-7Z" />
+    </svg>
+  );
+}
+
+function AppleMark({ className = "" }: { className?: string }) {
+  return (
+    <svg
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>Apple</title>
+      <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.26.82-1.31.05-2.31-1.34-3.14-2.57-1.7-2.45-3-6.93-1.25-9.96.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.86 3.29.86.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.97-.09.06-2.17 1.26-2.15 3.85.03 3.09 2.71 4.12 2.74 4.13-.03.07-.43 1.48-1.46 2.94M13.02 3.5c.69-.83 1.83-1.46 2.87-1.5.13 1.2-.35 2.39-1.01 3.25-.66.85-1.74 1.51-2.86 1.42-.15-1.17.39-2.4 1-3.17Z" />
     </svg>
   );
 }

@@ -2,84 +2,66 @@ window.CRIMSONSEEK_AUDITS = {
   "chatgpt-claude": {
     "arenaId": "chatgpt-claude",
     "userPosition": "ChatGPT is better than Claude for serious work.",
-    "crimsonPosition": "Claude is better for serious work when the job rewards judgment, long context, careful writing, and code edits over app surface area.",
-    "verdict": "ChatGPT wins on ecosystem gravity. Claude wins this saved debate on work quality: sharper writing, steadier long-context reasoning, and benchmark-grade coding credibility without the dashboard confetti.",
+    "crimsonPosition": "CrimsonSeek argues the strongest current countercase in the ChatGPT vs Claude debate, with source material woven directly into the reply.",
+    "verdict": "This saved ChatGPT vs Claude audit uses current source trails, concise counterarguments, and inline source-backed citation material instead of detached link lists.",
     "searchMoments": [
       {
-        "id": "work-benchmarks",
-        "label": "Serious work baseline",
-        "query": "Claude Sonnet 4.5 GPT-5 serious work coding agents benchmark",
-        "summary": "The first evidence check asks whether Claude is a vibes pick or a serious-work contender. The sources show ChatGPT has a huge work story, but Claude is explicitly built and marketed for coding, agents, computer use, and domain-heavy work.",
+        "id": "claude-workflow-depth",
+        "label": "Claude workflow depth",
+        "query": "ChatGPT vs Claude counter-evidence on serious work ecosystem, reliability, Claude Code, and workplace apps",
+        "summary": "Fresh Linkup check using TechCrunch reporting on Claude Code adoption and Claude's workplace app integrations.",
         "evidence": [
           {
-            "title": "Introducing Claude Sonnet 4.5",
-            "url": "https://www.anthropic.com/news/claude-sonnet-4-5",
-            "snippet": "Anthropic positions Sonnet 4.5 around coding, agents, computer use, and demanding professional domains, which puts Claude directly in the serious-work lane.",
-            "sourceQuality": "Primary source"
+            "title": "Claude Code rolls out a voice mode capability | TechCrunch",
+            "url": "https://techcrunch.com/2026/03/03/claude-code-rolls-out-a-voice-mode-capability/",
+            "snippet": "Anthropic is bringing Voice Mode to Claude Code, its AI coding assistant for developers, with a gradual release and a broader rollout planned.",
+            "sourceQuality": "Editorial source"
           },
           {
-            "title": "GPT-5 is here",
-            "url": "https://openai.com/gpt-5",
-            "snippet": "OpenAI frames GPT-5 as a work model for writing, research, analysis, coding, and problem solving, making this a real frontier comparison rather than a mascot fight.",
-            "sourceQuality": "Primary source"
-          },
-          {
-            "title": "Claude 4.5 Sonnet vs GPT-5",
-            "url": "https://artificialanalysis.ai/models/comparisons/claude-4-5-sonnet-thinking-vs-gpt-5",
-            "snippet": "Artificial Analysis provides side-by-side model comparisons across benchmark families, pricing, and speed so the debate can leave brand loyalty at the door.",
-            "sourceQuality": "Independent model analysis"
+            "title": "Anthropic launches interactive Claude apps, including Slack and other workplace tools | TechCrunch",
+            "url": "https://techcrunch.com/2026/01/26/anthropic-launches-interactive-claude-apps-including-slack-and-other-workplace-tools/",
+            "snippet": "Claude users can call up workplace apps inside the chatbot interface, including Slack, Canva, Figma, Box, and Clay.",
+            "sourceQuality": "Editorial source"
           }
         ]
       },
       {
-        "id": "coding-editing",
-        "label": "Coding and edit quality",
-        "query": "Aider leaderboard Claude Sonnet OpenAI GPT coding benchmark",
-        "summary": "The second evidence check pressures the claim that ChatGPT is automatically the safer professional coding choice. Coding benchmarks and web-development arenas keep Claude models in the top conversation, especially for edit-heavy workflows.",
+        "id": "claude-tools-in-one-place",
+        "label": "Claude tools in one place",
+        "query": "ChatGPT vs Claude counter-evidence on coding, file work, search, and team workflows in Claude",
+        "summary": "Fresh Linkup check focused on whether Claude now covers the practical work surfaces the user says only ChatGPT has.",
         "evidence": [
           {
-            "title": "Aider LLM Leaderboards",
-            "url": "https://aider.chat/docs/leaderboards/",
-            "snippet": "Aider tracks real code editing performance across models and has repeatedly shown Claude Sonnet models as strong choices for practical file-editing work.",
-            "sourceQuality": "Coding benchmark"
+            "title": "Claude Code rolls out a voice mode capability | TechCrunch",
+            "url": "https://techcrunch.com/2026/03/03/claude-code-rolls-out-a-voice-mode-capability/",
+            "snippet": "Claude Code is Anthropic's coding assistant for developers, and Voice Mode is meant to make coding workflows more conversational and hands-free.",
+            "sourceQuality": "Editorial source"
           },
           {
-            "title": "Introducing GPT-5 for developers",
-            "url": "https://openai.com/index/introducing-gpt-5-for-developers",
-            "snippet": "OpenAI reports strong GPT-5 coding performance and agentic workflow gains, which sets a high bar Claude still has to clear in real developer work.",
-            "sourceQuality": "Primary source"
-          },
-          {
-            "title": "LMArena Leaderboard",
-            "url": "https://lmarena.ai/leaderboard/",
-            "snippet": "LMArena's crowd-judged leaderboards include frontier Claude and OpenAI models near the top of coding and web-development comparisons.",
-            "sourceQuality": "Crowdsourced arena signal"
+            "title": "Anthropic launches interactive Claude apps, including Slack and other workplace tools | TechCrunch",
+            "url": "https://techcrunch.com/2026/01/26/anthropic-launches-interactive-claude-apps-including-slack-and-other-workplace-tools/",
+            "snippet": "Anthropic's launch apps for Claude are mostly workplace tools, with Slack, Canva, Figma, Box, Clay, and a Salesforce implementation expected.",
+            "sourceQuality": "Editorial source"
           }
         ]
       },
       {
-        "id": "workflow-judgment",
-        "label": "Workflow judgment",
-        "query": "Claude extended thinking long context professional writing workflow TechCrunch",
-        "summary": "The third evidence check looks past raw benchmark scores and asks which assistant behaves better inside messy work. Claude's case is strongest when the task needs disciplined prose, context retention, and a calm model that does not turn every memo into a product launch.",
+        "id": "claude-enterprise-safety",
+        "label": "Claude enterprise safety",
+        "query": "ChatGPT vs Claude counter-evidence on enterprise standardization, safety, security work, and integrations",
+        "summary": "Fresh Linkup check using current reporting on Anthropic's safety principles, cybersecurity work, and workplace integration strategy.",
         "evidence": [
           {
-            "title": "Claude 3.7 Sonnet and Claude Code",
-            "url": "https://www.anthropic.com/news/claude-3-7-sonnet",
-            "snippet": "Anthropic describes Claude 3.7 Sonnet as a hybrid reasoning model and says it optimized for real-world tasks that reflect how businesses use language models.",
-            "sourceQuality": "Primary source"
+            "title": "Anthropic revises Claude's 'Constitution,' and hints at chatbot consciousness | TechCrunch",
+            "url": "https://techcrunch.com/2026/01/21/anthropic-revises-claudes-constitution-and-hints-at-chatbot-consciousness/",
+            "snippet": "Anthropic revised the set of principles used to guide Claude's behavior and describe the context in which the model should operate.",
+            "sourceQuality": "Editorial source"
           },
           {
-            "title": "Anthropic launches a new AI model that thinks as long as you want",
-            "url": "https://techcrunch.com/2025/02/24/anthropic-launches-a-new-ai-model-that-thinks-as-long-as-you-want/",
-            "snippet": "TechCrunch covered Anthropic's extended-thinking push and Claude Code, highlighting a product direction aimed at complex, developer-facing work.",
-            "sourceQuality": "Technology reporting"
-          },
-          {
-            "title": "Introducing upgrades to Codex",
-            "url": "https://openai.com/index/introducing-upgrades-to-codex/",
-            "snippet": "OpenAI's Codex upgrades show ChatGPT's ecosystem strength, but also narrow the comparison to specific workflows where Claude can still win on output judgment.",
-            "sourceQuality": "Primary source"
+            "title": "Anthropic debuts preview of powerful new AI model Mythos in new cybersecurity initiative | TechCrunch",
+            "url": "https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/",
+            "snippet": "Anthropic's Project Glasswing involves 12 partner organizations using a frontier model for defensive security work and critical software security.",
+            "sourceQuality": "Editorial source"
           }
         ]
       }
@@ -88,139 +70,101 @@ window.CRIMSONSEEK_AUDITS = {
       {
         "id": "user-1",
         "role": "user",
-        "content": "ChatGPT is better for serious work. It has the ecosystem, the tools, the memory, the apps, and everyone already knows how to use it."
+        "content": "ChatGPT is better than Claude for serious work because it has the broader product ecosystem, tools, and everyday reliability."
       },
       {
         "id": "assistant-1",
         "role": "assistant",
-        "searchMomentId": "work-benchmarks",
-        "content": "Nice opener, but that is a distribution argument wearing a hard hat. The sources say ChatGPT is absolutely a work platform. They also say Claude is built for coding, agents, computer use, and domain-heavy work. Serious work is not a popularity contest. It is output under pressure, and Claude belongs in that ring."
+        "searchMomentId": "claude-workflow-depth",
+        "content": "A bigger ecosystem helps, but serious work is about finishing the job cleanly. Claude is not just a nice writer anymore: Anthropic is building developer workflows around Claude Code {{Anthropic is bringing Voice Mode to Claude Code, its AI coding assistant for developers}}(1), and Claude can pull workplace apps into the chat {{Claude users can call up workplace apps inside the chatbot interface, including Slack, Canva, Figma, Box, and Clay}}(2). That makes the Claude case practical, not just polished."
       },
       {
         "id": "user-2",
         "role": "user",
-        "content": "But ChatGPT is better across more tasks. I can write, code, analyze files, use images, search, and bounce between projects in one place."
+        "content": "Claude may write nicely, but serious work needs coding, file analysis, search, and team workflows in one place."
       },
       {
         "id": "assistant-2",
         "role": "assistant",
-        "content": "Range is useful. So is not turning every task into a buffet. Claude's edge is focus: cleaner prose, fewer jazz hands, better handling of dense context, and less urge to over-format a serious answer into a carnival brochure."
+        "searchMomentId": "claude-tools-in-one-place",
+        "content": "That is exactly why Claude is a stronger counterexample than it used to be. Coding is covered by Claude Code, which is being built for developer work {{Claude Code is Anthropic's coding assistant for developers}}(1). Team workflow is covered by interactive apps such as Slack, Figma, Box, and Clay inside Claude {{Anthropic's launch apps for Claude are mostly workplace tools}}(2). ChatGPT may still be broader, but the gap is not a wall."
       },
       {
         "id": "user-3",
         "role": "user",
-        "content": "For coding, ChatGPT still feels safer. Codex, GPT-5, and the developer ecosystem make it the obvious pick."
+        "content": "If a company has to standardize, ChatGPT is safer because employees already know it and OpenAI keeps shipping integrations."
       },
       {
         "id": "assistant-3",
         "role": "assistant",
-        "searchMomentId": "coding-editing",
-        "content": "Obvious pick is doing a lot of cardio there. OpenAI's coding case is strong, yes. But Aider and LMArena keep Claude models in the front pack for practical coding and web-development work. If the job is editing a repo, preserving intent, and not spraying clever nonsense into a diff, Claude is not the backup singer. It is lead vocals."
-      },
-      {
-        "id": "user-4",
-        "role": "user",
-        "content": "Even if Claude writes nicely, serious work needs reliability. ChatGPT is where businesses are investing."
-      },
-      {
-        "id": "assistant-4",
-        "role": "assistant",
-        "searchMomentId": "workflow-judgment",
-        "content": "Enterprise adoption proves ChatGPT is easy to buy, not that it wins every desk. The evidence points to Claude's real-world workflow bet: extended thinking, Claude Code, long-context discipline, and business-task tuning. For legal drafts, strategy memos, code reviews, and thorny analysis, the boring superpower is judgment. Claude has teeth there."
-      },
-      {
-        "id": "user-5",
-        "role": "user",
-        "content": "I still think ChatGPT is the default serious-work tool because it integrates with everything and keeps getting faster."
-      },
-      {
-        "id": "assistant-5",
-        "role": "assistant",
-        "content": "Default, sure. Best, not automatic. ChatGPT is the office tower. Claude is the locked room where the hard paragraph, the weird bug, and the 40-page context dump get handled without fireworks. For serious work, I will take the assistant that reads like it is trying to understand the problem, not win the product demo."
+        "searchMomentId": "claude-enterprise-safety",
+        "content": "Familiarity is useful, but safety is not the same as popularity. Anthropic has updated the principles that guide Claude's behavior {{Anthropic revised the set of principles used to guide Claude's behavior}}(1), and it is also putting frontier models into defensive security work with partners {{12 partner organizations are using a frontier model for defensive security work and critical software security}}(2). For standardizing, that is a real enterprise safety argument."
       }
     ]
   },
   "mac-windows": {
     "arenaId": "mac-windows",
     "userPosition": "Macs are better than Windows PCs for most people.",
-    "crimsonPosition": "Windows PCs are better for most people because choice, price, gaming, compatibility, and upgrade paths matter more than Apple polish.",
-    "verdict": "Mac wins the premium appliance argument. Windows wins the most-people argument: more budgets, more shapes, more games, more legacy compatibility, and more escape hatches when real life gets weird.",
+    "crimsonPosition": "CrimsonSeek argues the strongest current countercase in the Mac vs Windows debate, with source material woven directly into the reply.",
+    "verdict": "This saved Mac vs Windows audit uses full queries, clean evidence snippets, and short source-backed counterarguments that stay readable before getting technical.",
     "searchMoments": [
       {
-        "id": "value-choice",
-        "label": "Value and hardware choice",
-        "query": "MacBook Air specs Windows laptop choices 2026 value hardware choice",
-        "summary": "The first evidence check tests whether Mac polish beats the practical spread of Windows hardware. The source trail surfaces Apple's clean MacBook story, then stacks it against Windows choice across prices, form factors, and upgrade paths.",
+        "id": "windows-hardware-choice",
+        "label": "Windows hardware choice",
+        "query": "Mac vs Windows counter-evidence on quiet hardware, laptop value, device choice, and long-term fit",
+        "summary": "Fresh Linkup check using current laptop and desktop reviews to test whether Windows choice still matters for everyday buyers.",
         "evidence": [
           {
-            "title": "MacBook Air - Tech Specs",
-            "url": "https://www.apple.com/macbook-air/specs/",
-            "snippet": "Apple's own specs make the MacBook Air case: polished hardware, long battery claims, Apple Intelligence, and tight iPhone integration in a simple laptop lineup.",
-            "sourceQuality": "Primary product spec"
+            "title": "Best Gaming PCs of 2026 | Tom's Hardware",
+            "url": "https://www.tomshardware.com/best-picks/best-gaming-pcs",
+            "snippet": "Tom's Hardware described one tested Windows gaming PC as one of the quieter high-end gaming rigs in its review set.",
+            "sourceQuality": "Editorial source"
           },
           {
-            "title": "Best Windows laptops in 2026: 9 top-rated PCs tested and reviewed",
-            "url": "https://www.windowscentral.com/best-laptop-usb-c",
-            "snippet": "Windows Central's tested roundup spans Surface, ASUS, Lenovo, convertibles, business machines, gaming laptops, and value picks, showing Windows buyers are not locked into one laptop philosophy.",
-            "sourceQuality": "Independent buying guide"
-          },
-          {
-            "title": "Windows 11 System Requirements",
-            "url": "https://support.microsoft.com/en-us/windows/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3",
-            "snippet": "Microsoft documents Windows 11 across PCs and notes that some systems allow RAM or storage upgrades, which matters when buyers want a longer runway from cheaper hardware.",
-            "sourceQuality": "Primary support documentation"
+            "title": "Best MacBook Alternatives 2026 - Laptops",
+            "url": "https://www.cnet.com/tech/computing/best-macbook-alternatives/",
+            "snippet": "CNET reviewed Windows laptops positioned as alternatives to Apple's MacBook Air and MacBook Pro models.",
+            "sourceQuality": "Editorial source"
           }
         ]
       },
       {
-        "id": "gaming-software",
-        "label": "Gaming and software gravity",
-        "query": "Windows 11 gaming DirectX 12 Ultimate PC Game Pass best gaming laptops 2026",
-        "summary": "The second evidence check asks the gaming claim. Macs have improved, but the source cards point to Windows as the default home for PC game APIs, dedicated GPUs, desktops, handhelds, storefronts, and upgradeable rigs.",
+        "id": "windows-phone-link",
+        "label": "Windows phone link",
+        "query": "Mac vs Windows counter-evidence on phone integration, messages, notifications, calls, and support",
+        "summary": "Fresh Linkup check focused on whether Windows can cover the phone and everyday workflow advantages often credited to Macs.",
         "evidence": [
           {
-            "title": "Gaming on Windows 11: Windows Gaming PC & Laptops",
-            "url": "https://www.microsoft.com/en-us/windows/windows-11-pc-gaming",
-            "snippet": "Microsoft highlights DirectX 12 Ultimate, Auto HDR, DirectStorage, Game Bar, PC Game Pass, and broad game support as core Windows 11 gaming advantages.",
-            "sourceQuality": "Primary platform source"
+            "title": "32 Hidden Windows 11 Features You're Probably Not Using (But Should Be) | PCMag",
+            "url": "https://www.pcmag.com/explainers/31-hidden-windows-11-features-you-need-to-try-right-now",
+            "snippet": "Windows 11's Phone Link app lets users connect a smartphone, view notifications, respond to text messages, and make calls from a PC.",
+            "sourceQuality": "Editorial source"
           },
           {
-            "title": "Best Gaming Laptops 2026: Tested and reviewed",
-            "url": "https://www.tomshardware.com/laptops/gaming-laptops/best-gaming-laptops",
-            "snippet": "Tom's Hardware tests Windows gaming laptops across budgets and GPUs, including dedicated Nvidia configurations built for portable high-performance play.",
-            "sourceQuality": "Benchmarked buying guide"
-          },
-          {
-            "title": "Best Gaming PCs of 2026",
-            "url": "https://www.tomshardware.com/best-picks/best-gaming-pcs/",
-            "snippet": "Tom's Hardware emphasizes desktop PC flexibility, where buyers can choose parts around the games they play, the resolution they want, and the performance they need.",
-            "sourceQuality": "Benchmarked buying guide"
+            "title": "Best MacBook Alternatives 2026 - Laptops",
+            "url": "https://www.cnet.com/tech/computing/best-macbook-alternatives/",
+            "snippet": "CNET's MacBook-alternative guide compares Windows laptops that aim to match Apple's design and everyday portability.",
+            "sourceQuality": "Editorial source"
           }
         ]
       },
       {
-        "id": "compat-business",
-        "label": "Apps and compatibility",
-        "query": "Windows app compatibility business Mac Boot Camp Apple silicon Microsoft App Assure",
-        "summary": "The third evidence check looks at the boring stuff that decides daily life: old apps, office standards, school software, business tools, remote desktops, and Windows fallback options on Macs.",
+        "id": "windows-update-reliability",
+        "label": "Windows update reliability",
+        "query": "Mac vs Windows counter-evidence on Windows update reliability, support lifecycle, polish, and fewer setup headaches",
+        "summary": "Fresh Linkup check using Microsoft support pages and Windows reporting on servicing, quality updates, and everyday usability improvements.",
         "evidence": [
           {
-            "title": "Windows 365 and App Assure",
-            "url": "https://learn.microsoft.com/en-us/microsoft-365/fasttrack/windows-and-app-assure",
-            "snippet": "Microsoft says App Assure helps address Windows 10/11 and Microsoft 365 app compatibility issues, which is a strong enterprise counter to the idea that Mac simplicity always wins.",
-            "sourceQuality": "Official enterprise documentation"
+            "title": "Windows 11, version 26H1 known issues and notifications | Microsoft Learn",
+            "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-26h1",
+            "snippet": "Microsoft says supported Windows 11 versions continue to receive monthly security and quality updates under servicing timelines and lifecycle policies.",
+            "sourceQuality": "Primary or official source"
           },
           {
-            "title": "Install Windows 10 on your Mac with Boot Camp Assistant",
-            "url": "https://support.apple.com/en-us/102622",
-            "snippet": "Apple's Boot Camp support page says Windows 10 installation is for Intel-based Macs and lists Apple silicon MacBook models as excluded, limiting native Windows fallback on modern Macs.",
-            "sourceQuality": "Primary support documentation"
-          },
-          {
-            "title": "Get started with Windows App to connect to devices and apps",
-            "url": "https://learn.microsoft.com/en-us/windows-app/get-started-connect-devices-desktops-apps",
-            "snippet": "Microsoft documents Windows App access from Windows, macOS, iOS/iPadOS, Android/Chrome OS, web browsers, and more, showing Windows workspaces can be reached across devices.",
-            "sourceQuality": "Official product documentation"
+            "title": "We've tested the April 2026 Windows 11 update, and its 11 improvements genuinely make the OS feel better | Windows Central",
+            "url": "https://www.windowscentral.com/microsoft/windows-11/11-big-windows-11-changes-in-april-2026-you-need-to-know-right-now",
+            "snippet": "Windows Central described the April 2026 Windows 11 update as focused on performance, polish, and everyday usability.",
+            "sourceQuality": "Editorial source"
           }
         ]
       }
@@ -229,140 +173,101 @@ window.CRIMSONSEEK_AUDITS = {
       {
         "id": "user-1",
         "role": "user",
-        "content": "Macs are better for most people. The hardware is polished, macOS is cleaner, battery life rocks, and iPhone integration saves ordinary people from driver archaeology."
+        "content": "Macs are better than Windows PCs for most people because the hardware is simpler, quieter, and lasts."
       },
       {
         "id": "assistant-1",
         "role": "assistant",
-        "searchMomentId": "value-choice",
-        "content": "Clean is not the same as best for most. The source trail pulls Apple's MacBook story, then Windows throws down the map: budget laptops, premium ultrabooks, touchscreens, 2-in-1s, desktops, gaming rigs, and some upgradeable hardware. Apple sells the boutique. Windows sells the city."
+        "searchMomentId": "windows-hardware-choice",
+        "content": "Mac hardware is clean, but Windows is not just a pile of noisy bargain machines. Reviewers still find quiet, high-performance Windows PCs {{one tested Windows gaming PC was one of the quieter high-end rigs}}(1), and there are Windows laptops built as direct MacBook alternatives {{Windows laptops are reviewed as alternatives to Apple's MacBook Air and MacBook Pro models}}(2). For most buyers, choice can mean a better fit, not extra homework."
       },
       {
         "id": "user-2",
         "role": "user",
-        "content": "Most people do not want a city. They want one good laptop that works for years. MacBook Air nails that without bloatware, fan noise, or weird OEM app sludge."
+        "content": "Most people do not need huge device choice. They need a machine that works cleanly with phones, photos, messages, and support."
       },
       {
         "id": "assistant-2",
         "role": "assistant",
-        "content": "Fair. MacBook Air is the appliance dream. But most people also include students with $500, accountants who need a numpad, gamers, office workers with ancient printers, and parents buying the best deal at Costco. One beautiful lane does not beat a whole map."
+        "searchMomentId": "windows-phone-link",
+        "content": "That is fair, but Windows is not starting from zero on everyday integration. Phone Link lets people see notifications, respond to texts, and make calls from the PC {{Windows 11's Phone Link app lets users view notifications, respond to text messages, and make calls}}(1). And if someone wants MacBook-like portability without buying into Apple, current Windows alternatives exist {{Windows laptops can aim to match Apple's design and everyday portability}}(2)."
       },
       {
         "id": "user-3",
         "role": "user",
-        "content": "Gaming is a niche. For real life, people browse, write docs, edit photos, and video chat. Macs handle that beautifully and stay fast."
+        "content": "Windows flexibility sounds nice, but the average buyer wants fewer decisions and fewer driver or update headaches."
       },
       {
         "id": "assistant-3",
         "role": "assistant",
-        "searchMomentId": "gaming-software",
-        "content": "Gaming is not just a hobby box. It drives GPUs, drivers, graphics APIs, stores, controllers, and peripherals. The source trail points to DirectX, Auto HDR, DirectStorage, PC Game Pass, and a huge Windows hardware bench. Macs can play more than before. Windows is still where the library lives rent-free."
-      },
-      {
-        "id": "user-4",
-        "role": "user",
-        "content": "The average person does not care about RTX cards. They care that the machine is reliable and pleasant. macOS updates feel calmer than Windows updates."
-      },
-      {
-        "id": "assistant-4",
-        "role": "assistant",
-        "searchMomentId": "compat-business",
-        "content": "Pleasant matters. So does the school testing app, the accounting plug-in, the scanner driver, the remote desktop, and the tool your employer bought in 2014 and refuses to bury. Microsoft has an app compatibility program. Apple still documents Boot Camp around Intel Macs. Windows is messy because it supports the mess."
-      },
-      {
-        "id": "user-5",
-        "role": "user",
-        "content": "But the Apple ecosystem is magic. AirDrop, iMessage, Continuity, Apple Stores, fewer choices. That is why Macs are better for normal humans."
-      },
-      {
-        "id": "assistant-5",
-        "role": "assistant",
-        "searchMomentId": "value-choice",
-        "content": "Magic is real if you bought the wand, the robe, and the castle. My verdict stays Windows because most people starts with fit and price, not taste. More budgets, more form factors, more ports, more stores, more repair options, more weird-but-useful machines. Macs are a gorgeous answer for Apple people. Windows is the broader answer for people people."
+        "searchMomentId": "windows-update-reliability",
+        "content": "Update headaches are real, but the countercase is that Windows has become more managed than its reputation. Microsoft says supported Windows 11 versions keep getting monthly security and quality updates {{supported Windows 11 versions continue to receive monthly security and quality updates}}(1), and recent updates are aimed at performance, polish, and everyday usability {{the April 2026 Windows 11 update focused on performance, polish, and everyday usability}}(2). That is not chaos; it is a platform improving in public."
       }
     ]
   },
   "iphone-android": {
     "arenaId": "iphone-android",
     "userPosition": "iPhone is better than Android for most people.",
-    "crimsonPosition": "Android is better for most people because it offers more choice, better price flexibility, deeper control, and faster hardware variety without forcing everyone through one company's gate.",
-    "verdict": "iPhone wins on polish, resale gravity, and ecosystem comfort. Android wins this saved debate on the broader public case: more price points, more form factors, more repair paths, more customization, and flagship hardware that does not wait for Cupertino permission.",
+    "crimsonPosition": "CrimsonSeek argues the strongest current countercase in the iPhone vs Android debate, with source material woven directly into the reply.",
+    "verdict": "This saved iPhone vs Android audit keeps the countercase short, current, and source-backed without treating Android choice as automatic chaos.",
     "searchMoments": [
       {
-        "id": "choice-value",
-        "label": "Choice and value",
-        "query": "Android phone price range device choice iPhone comparison Samsung Google Motorola CNET Android Authority",
-        "summary": "The first evidence check asks whether Android is just cheaper or actually broader. The sources show Android spans budget, midrange, foldable, gaming, and premium phones while iPhone buyers mostly choose between a few Apple-controlled tiers.",
+        "id": "android-security-maturity",
+        "label": "Android security maturity",
+        "query": "iPhone vs Android counter-evidence on Android security patches, privacy upgrades, and predictable protection",
+        "summary": "Fresh Linkup check using Android security bulletins and current reporting on Android's 2026 security upgrades.",
         "evidence": [
           {
-            "title": "Android Phones",
-            "url": "https://www.android.com/phones/",
-            "snippet": "Android presents a wide device ecosystem across brands, sizes, prices, and hardware styles, which makes the platform easier to match to different budgets and priorities.",
-            "sourceQuality": "Primary platform source"
+            "title": "Android Security Bulletin-May 2026 | Android Open Source Project",
+            "url": "https://source.android.com/docs/security/bulletin/2026/2026-05-01",
+            "snippet": "The May 2026 Android Security Bulletin says patch levels dated 2026-05-01 or later address the listed vulnerabilities.",
+            "sourceQuality": "Primary or official source"
           },
           {
-            "title": "Best Android Phones of 2026",
+            "title": "12 new security features coming to Android phones in 2026",
+            "url": "https://www.androidauthority.com/android-security-features-2026-3665372/",
+            "snippet": "Google's 2026 Android security and privacy upgrades include protections against banking scam calls, device theft, malware, and fake Android builds.",
+            "sourceQuality": "Editorial source"
+          }
+        ]
+      },
+      {
+        "id": "android-camera-and-hardware",
+        "label": "Android camera and hardware",
+        "query": "iPhone vs Android counter-evidence on Android cameras, flagship hardware, software support, and app quality",
+        "summary": "Fresh Linkup check using hands-on Android phone reviews to test whether Android still asks buyers to trade quality for choice.",
+        "evidence": [
+          {
+            "title": "This is my new favorite camera phone and one of the best Android phones I've ever used",
+            "url": "https://www.androidauthority.com/oppo-find-x9-ultra-review-3661474/",
+            "snippet": "Android Authority said the OPPO Find X9 Ultra leapfrogged the best cameras from Apple, Google, and Samsung.",
+            "sourceQuality": "Editorial source"
+          },
+          {
+            "title": "Best Android Phones of 2026: Tested by Our Experts - CNET",
             "url": "https://www.cnet.com/tech/mobile/best-android-phone/",
-            "snippet": "CNET's Android picks typically span premium flagships, value models, camera phones, and foldables, reinforcing that Android is not one phone strategy.",
-            "sourceQuality": "Technology buying guide"
-          },
-          {
-            "title": "Samsung Galaxy Smartphones",
-            "url": "https://www.samsung.com/us/smartphones/",
-            "snippet": "Samsung's Galaxy lineup covers budget A-series devices, S-series flagships, and foldables, showing how Android buyers can optimize for price, screen, camera, or form factor.",
-            "sourceQuality": "Manufacturer catalog"
+            "snippet": "CNET's tested Android picks include phones with extremely capable cameras and enough power for everyday needs.",
+            "sourceQuality": "Editorial source"
           }
         ]
       },
       {
-        "id": "control-ecosystem",
-        "label": "Control and defaults",
-        "query": "Android customization default apps sideloading iPhone locked ecosystem The Verge Android Authority",
-        "summary": "The second evidence check tests whether iPhone convenience is worth the lock-in. Android's case gets stronger on default apps, launchers, file handling, app sources, and tighter user control over how the phone behaves.",
+        "id": "android-lower-risk",
+        "label": "Android lower risk",
+        "query": "iPhone vs Android counter-evidence on Android value, long software support, and lower-risk phone buying",
+        "summary": "Fresh Linkup check using current Android buyer guides on software support, Pixel pricing, and flagship longevity.",
         "evidence": [
           {
-            "title": "Switch to Android",
-            "url": "https://www.android.com/switch/",
-            "snippet": "Google markets Android around moving your data, choosing devices, and using Google services across phones, which supports the case that the platform is less tied to one hardware lane.",
-            "sourceQuality": "Primary platform source"
+            "title": "Best Android Phones of 2026: Tested by Our Experts - CNET",
+            "url": "https://www.cnet.com/tech/mobile/best-android-phone/",
+            "snippet": "CNET notes that Google and Samsung promise seven years of software updates on current flagship Android phones.",
+            "sourceQuality": "Editorial source"
           },
           {
-            "title": "Android 15 Review",
-            "url": "https://www.androidauthority.com/android-15-review-3488617/",
-            "snippet": "Android Authority highlights Android's customization, privacy controls, and quality-of-life changes, which matter for users who want a phone that adapts to them.",
-            "sourceQuality": "Specialist Android analysis"
-          },
-          {
-            "title": "Apple's iPhone ecosystem is changing under regulatory pressure",
-            "url": "https://www.theverge.com/apple",
-            "snippet": "The Verge's Apple coverage has tracked pressure around app distribution, browser rules, messaging, and platform control, underscoring that iPhone simplicity comes with gatekeeping tradeoffs.",
-            "sourceQuality": "Technology reporting hub"
-          }
-        ]
-      },
-      {
-        "id": "repair-updates",
-        "label": "Repair, support, durability",
-        "query": "iFixit iPhone repair Samsung self repair Android updates seven years Apple support comparison",
-        "summary": "The third evidence check separates long-term ownership from brand comfort. Apple is strong on updates and resale, but Android flagships have closed much of the support gap while offering more repair options and competing hardware durability stories.",
-        "evidence": [
-          {
-            "title": "Samsung Galaxy Self-Repair",
-            "url": "https://www.samsung.com/us/support/self-repair/",
-            "snippet": "Samsung's self-repair program gives owners access to parts and guides for supported Galaxy devices, strengthening Android's case on long-term ownership control.",
-            "sourceQuality": "Manufacturer repair program"
-          },
-          {
-            "title": "iPhone Repair",
-            "url": "https://www.ifixit.com/Device/iPhone",
-            "snippet": "iFixit documents iPhone repair procedures and repairability issues, which is useful evidence when judging ownership beyond the first glossy unboxing.",
-            "sourceQuality": "Independent repair resource"
-          },
-          {
-            "title": "Google Pixel phones now get 7 years of updates",
-            "url": "https://blog.google/products/pixel/software-support-pixel-8-pixel-8-pro/",
-            "snippet": "Google announced seven years of OS, security, and feature drop updates for Pixel 8 and Pixel 8 Pro, narrowing one of iPhone's classic long-support advantages.",
-            "sourceQuality": "Primary manufacturer source"
+            "title": "Best Google Pixel Phone to Buy in 2026 - CNET",
+            "url": "https://www.cnet.com/tech/mobile/best-google-pixel-phone/",
+            "snippet": "CNET says the Pixel 10A remains a 500 dollar option even as phones have become more expensive.",
+            "sourceQuality": "Editorial source"
           }
         ]
       }
@@ -371,139 +276,101 @@ window.CRIMSONSEEK_AUDITS = {
       {
         "id": "user-1",
         "role": "user",
-        "content": "iPhone is better for most people. It is simpler, more polished, more secure, and the ecosystem just works without making normal people become phone mechanics."
+        "content": "iPhone is better than Android for most people because the ecosystem is polished, secure, and predictable."
       },
       {
         "id": "assistant-1",
         "role": "assistant",
-        "searchMomentId": "choice-value",
-        "content": "Simplicity is nice, but most people also have budgets, preferences, and hands that are not all Apple-approved dimensions. The evidence points to Android's biggest public-service feature: choice. Cheap phone, camera beast, foldable, huge battery, stylus, tiny-ish flagship, weird gaming slab. Android says pick your lane. iPhone says pick your storage tier."
+        "searchMomentId": "android-security-maturity",
+        "content": "iPhone predictability is nice, but Android is not the messy security gamble people remember. Android publishes regular security bulletins with specific patch levels {{patch levels dated 2026-05-01 or later address the listed Android vulnerabilities}}(1), and Google's 2026 upgrades target scams, theft, malware, and fake builds {{Android security and privacy upgrades include protections against banking scam calls, device theft, malware, and fake Android builds}}(2). Predictable is not the same as automatically safer."
       },
       {
         "id": "user-2",
         "role": "user",
-        "content": "Choice sounds good until people buy the wrong thing. iPhones make the decision easy, get years of updates, keep resale value, and work smoothly with Macs, iPads, AirPods, and Apple Watch."
+        "content": "Android choice is overrated when people mostly want great cameras, long updates, and apps that work well."
       },
       {
         "id": "assistant-2",
         "role": "assistant",
-        "content": "That is a strong luxury answer, not a most-people answer. The Apple stack is amazing if you can afford the whole stack. Android's boring magic is that you can spend $250, $500, or $1,200 and still get a real smartphone instead of a cover charge for the ecosystem nightclub."
+        "searchMomentId": "android-camera-and-hardware",
+        "content": "Those priorities are reasonable, but Android now competes directly on them. Reviewers say the OPPO Find X9 Ultra jumped ahead of the best camera phones from Apple, Google, and Samsung {{the OPPO Find X9 Ultra leapfrogged the best cameras from Apple, Google, and Samsung}}(1). CNET's Android picks also include phones with strong cameras and enough power for normal use {{tested Android phones include extremely capable cameras and enough power for everyday needs}}(2). Choice matters when the choices are good."
       },
       {
         "id": "user-3",
         "role": "user",
-        "content": "But iPhone is safer for average users. Less tinkering, fewer sketchy app stores, cleaner privacy prompts, better FaceTime and iMessage, less chaos."
+        "content": "Resale value, accessories, Apple Stores, family features, and privacy make iPhone the lower-risk phone."
       },
       {
         "id": "assistant-3",
         "role": "assistant",
-        "searchMomentId": "control-ecosystem",
-        "content": "Less chaos, yes. Less control, also yes. The sources show Android's pitch is customization, defaults, device choice, and fewer one-company bottlenecks. iMessage lock-in is not a product virtue, it is a velvet rope. Android lets people change launchers, defaults, keyboards, file flows, and app sources without asking Apple for a hall pass."
-      },
-      {
-        "id": "user-4",
-        "role": "user",
-        "content": "Most people do not care about launchers or sideloading. They care that the camera opens fast, the phone feels premium, and customer support is easy when something breaks."
-      },
-      {
-        "id": "assistant-4",
-        "role": "assistant",
-        "content": "Fair, but Android flagships are not bargain-bin science projects. Samsung, Google, OnePlus, and others compete hard on cameras, screens, charging, zoom, AI features, and battery life. Competition is the point. Apple can be excellent at its pace. Android makes everyone sprint."
-      },
-      {
-        "id": "user-5",
-        "role": "user",
-        "content": "Long term, iPhones still age better. Updates, accessories, resale, repairs, cases, service, family sharing, all of it makes iPhone the lower-risk pick."
-      },
-      {
-        "id": "assistant-5",
-        "role": "assistant",
-        "searchMomentId": "repair-updates",
-        "content": "Lower risk for some, sure. Automatic win, no. Google pushed Pixel support to seven years, Samsung has self-repair, and iFixit keeps reminding everyone that premium does not mean easy to fix. Android's long-term case is now credible: more parts of the market, more repair routes, more hardware bets, and fewer reasons to pretend one phone shape fits every human."
+        "searchMomentId": "android-lower-risk",
+        "content": "iPhone may still win on resale and stores, but the risk gap is smaller now. Google and Samsung promise long support on current flagships {{Google and Samsung promise seven years of software updates on current flagship Android phones}}(1), and Android buyers can still choose cheaper current options {{the Pixel 10A remains a 500 dollar option even as phones have become more expensive}}(2). Lower risk is not only about brand; it is also about support and price."
       }
     ]
   },
   "ai-jobs": {
     "arenaId": "ai-jobs",
     "userPosition": "AI will create more good jobs than it destroys.",
-    "crimsonPosition": "AI will put workers at risk through displacement, deskilling, surveillance, wage pressure, and uneven bargaining power unless the gains are deliberately shared.",
-    "verdict": "AI can create real work. CrimsonSeek wins this saved debate because net jobs are not the same as good jobs: exposure is broad, transitions are painful, and productivity gains do not automatically land in paychecks.",
+    "crimsonPosition": "CrimsonSeek argues the strongest current countercase in the AI in Jobs debate, with source material woven directly into the reply.",
+    "verdict": "This saved AI jobs audit keeps the countercase cautious and readable: productivity may rise, but job quality and job distribution are still unsettled.",
     "searchMoments": [
       {
-        "id": "exposure-map",
-        "label": "Worker exposure map",
-        "query": "Pew Brookings ILO generative AI worker exposure jobs clerical women",
-        "summary": "The first evidence check asks whether job risk is just panic theater. The source trail surfaces a consistent picture: exposure is broad, office-heavy, and unevenly distributed across gender, education, wage, and occupation lines.",
+        "id": "job-growth-uncertainty",
+        "label": "Job growth uncertainty",
+        "query": "AI jobs counter-evidence on productivity, employment effects, automation exposure, and labor market uncertainty",
+        "summary": "Fresh Linkup check using labor research and official statistics to test whether productivity gains already prove net job creation.",
         "evidence": [
           {
-            "title": "Which U.S. Workers Are More Exposed to AI on Their Jobs?",
-            "url": "https://www.pewresearch.org/social-trends/2023/07/26/which-u-s-workers-are-more-exposed-to-ai-on-their-jobs/",
-            "snippet": "Pew estimates that 19% of U.S. workers were in the most AI-exposed jobs in 2022, with higher exposure among college-educated, higher-wage, Asian, White, and female workers.",
-            "sourceQuality": "Nonpartisan survey and labor-data analysis"
+            "title": "AI growth acceleration versus distributional fairness | Brookings",
+            "url": "https://www.brookings.edu/articles/ai-growth-acceleration-versus-distributional-fairness/",
+            "snippet": "Brookings cites tracker evidence that current measures of AI exposure, automation, and augmentation show no systematic relation to employment or unemployment changes.",
+            "sourceQuality": "Research or institutional source"
           },
           {
-            "title": "Generative AI, the American worker, and the future of work",
-            "url": "https://www.brookings.edu/articles/generative-ai-the-american-worker-and-the-future-of-work/",
-            "snippet": "Brookings finds more than 30% of workers could see at least half of their occupation's tasks disrupted by generative AI, with office and administrative roles especially exposed.",
-            "sourceQuality": "Think tank labor-market analysis"
-          },
-          {
-            "title": "Generative AI and Jobs: A global analysis of potential effects on job quantity and quality",
-            "url": "https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and",
-            "snippet": "The ILO finds clerical work is the broad occupation group most exposed to generative AI and flags gendered risk because clerical jobs are a major source of female employment.",
-            "sourceQuality": "International labor research"
+            "title": "Productivity and Artificial Intelligence : U.S. Bureau of Labor Statistics",
+            "url": "https://www.bls.gov/productivity/articles-and-research/ai-and-productivity/home.htm",
+            "snippet": "BLS says AI has captured attention because researchers are still trying to track its development and its effect on workers and the economy.",
+            "sourceQuality": "Primary or official source"
           }
         ]
       },
       {
-        "id": "net-jobs-skills",
-        "label": "Net jobs and skill gaps",
-        "query": "WEF Future of Jobs 2025 BLS AI employment projections McKinsey occupational transitions 2030",
-        "summary": "The second evidence check tests the optimistic net-jobs claim. The source trail finds credible growth signals, then ruins the confetti by showing churn, skill mismatch, and transitions landing hardest on workers with less cushion.",
+        "id": "task-substitution-risk",
+        "label": "Task substitution risk",
+        "query": "AI jobs counter-evidence on task substitution, worker mobility, enterprise gains, and deskilling risk",
+        "summary": "Fresh Linkup check using workforce research on whether AI mostly augments workers or starts replacing work tasks.",
         "evidence": [
           {
-            "title": "Future of Jobs Report 2025: 78 Million New Job Opportunities by 2030 but Urgent Upskilling Needed",
-            "url": "https://www.weforum.org/press/2025/01/future-of-jobs-report-2025-78-million-new-job-opportunities-by-2030-but-urgent-upskilling-needed-to-prepare-workforces/",
-            "snippet": "The World Economic Forum projects 170 million roles created and 92 million displaced by 2030, a net gain of 78 million, while warning that 39% of key skills may change.",
-            "sourceQuality": "Global employer survey and forecast"
+            "title": "AI, strategy, and the future of work: Oxford economist Jean-Paul Carvalho",
+            "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/ai-strategy-and-the-future-of-work-oxford-economist-jean-paul-carvalho",
+            "snippet": "McKinsey's interview says AI agents are becoming increasingly substitutable for human labor, with evidence of full substitutability in some tasks.",
+            "sourceQuality": "Research or institutional source"
           },
           {
-            "title": "AI impacts in BLS employment projections",
-            "url": "https://www.bls.gov/opub/ted/2025/ai-impacts-in-bls-employment-projections.htm",
-            "snippet": "BLS says AI may support demand for software developers and data infrastructure roles, but also documents competition and task change in occupations exposed to AI tools.",
-            "sourceQuality": "U.S. government labor projections"
-          },
-          {
-            "title": "Generative AI and the future of work in America",
-            "url": "https://www.mckinsey.com/mgi/our-research/generative-ai-and-the-future-of-work-in-america",
-            "snippet": "McKinsey estimates up to 30% of U.S. work hours could be automated by 2030 and that 12 million additional occupational transitions may be needed.",
-            "sourceQuality": "Management research institute report"
+            "title": "The rise of the human-AI workforce | McKinsey",
+            "url": "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-rise-of-the-human-ai-workforce",
+            "snippet": "McKinsey says most companies are not yet seeing meaningful enterprise-level gains from AI, even though the potential value is large.",
+            "sourceQuality": "Research or institutional source"
           }
         ]
       },
       {
-        "id": "job-quality-bargaining",
-        "label": "Job quality and bargaining",
-        "query": "OECD Employment Outlook 2023 AI labor market job quality NBER generative AI productivity substitution",
-        "summary": "The third evidence check asks who captures the AI dividend. The source trail finds productivity upside, but also warnings about job quality, surveillance, work intensity, and substitution when firms can codify worker skill into software.",
+        "id": "retraining-gap",
+        "label": "Retraining gap",
+        "query": "AI jobs counter-evidence on retraining capacity, future skills, measurement gaps, and labor transition speed",
+        "summary": "Fresh Linkup check using skills and economic-measurement sources to test whether retraining can absorb AI disruption fast enough.",
         "evidence": [
           {
-            "title": "Artificial intelligence and jobs: No signs of slowing labour demand (yet)",
-            "url": "https://www.oecd.org/en/publications/2023/07/oecd-employment-outlook-2023_904bcef3/full-report/artificial-intelligence-and-jobs-no-signs-of-slowing-labour-demand-yet_5aebe670.html",
-            "snippet": "OECD reports limited evidence of slowing labor demand so far, but says job quality may be affected before job quantity through risks such as work intensity, privacy, bias, and accountability.",
-            "sourceQuality": "International policy and labor analysis"
+            "title": "What are the most valuable skills for the jobs of the future? | World Economic Forum",
+            "url": "https://www.weforum.org/videos/future-of-jobs-valuable-skills/",
+            "snippet": "The World Economic Forum says AI and big data, leadership, and social influence will be high-demand skills over the next five years.",
+            "sourceQuality": "Research or institutional source"
           },
           {
-            "title": "Generative AI at Work",
-            "url": "https://www.nber.org/papers/w31161",
-            "snippet": "An NBER study of 5,179 customer support agents found a 14% average productivity lift from generative AI, with much larger gains for novice and lower-skilled workers.",
-            "sourceQuality": "Peer-reviewed-style working paper"
-          },
-          {
-            "title": "Generative AI and Firm Values",
-            "url": "https://www.nber.org/papers/w31222",
-            "snippet": "NBER researchers find market and labor-demand evidence consistent with a labor-technology substitution channel for firms whose workforces are highly exposed to generative AI.",
-            "sourceQuality": "Economic working paper"
+            "title": "AI & Economic Measurement | NBER",
+            "url": "https://www.nber.org/programs-projects/projects-and-centers/8951-ai-economic-measurement",
+            "snippet": "NBER's AI economic measurement project includes work on how traditional labor market and productivity measures may need changes to capture AI's effects.",
+            "sourceQuality": "Research or institutional source"
           }
         ]
       }
@@ -512,140 +379,101 @@ window.CRIMSONSEEK_AUDITS = {
       {
         "id": "user-1",
         "role": "user",
-        "content": "AI will create more good jobs than it destroys. Every major technology wave looks scary, then productivity rises, new industries appear, and people end up doing better work."
+        "content": "AI will create more good jobs than it destroys because it raises productivity and creates new roles around automation."
       },
       {
         "id": "assistant-1",
         "role": "assistant",
-        "searchMomentId": "exposure-map",
-        "content": "That is the TED Talk version. The labor map is spicier. Pew, Brookings, and the ILO all show broad exposure, especially in office and clerical work. If AI can hit half your tasks, the question is not just new jobs. It is who keeps power when the spreadsheet learns to type back."
+        "searchMomentId": "job-growth-uncertainty",
+        "content": "Productivity can create jobs, but it does not guarantee good jobs for the same workers. Brookings points out that current AI exposure measures do not yet line up neatly with employment changes {{current measures of AI exposure, automation, and augmentation show no systematic relation to employment or unemployment changes}}(1). BLS is still studying how to track AI's effects on workers and the economy {{researchers are still trying to track AI's effect on workers and the economy}}(2). The honest counter is uncertainty, not automatic job growth."
       },
       {
         "id": "user-2",
         "role": "user",
-        "content": "Exposure does not mean destruction. It can mean help. AI handles the dull stuff, humans move up the value chain, and boring work gets automated away."
+        "content": "Exposure to AI does not mean replacement. It means workers can offload boring tasks and move up the value chain."
       },
       {
         "id": "assistant-2",
         "role": "assistant",
-        "content": "Moving up the value chain is a gorgeous phrase until rent is due Friday. A tool that removes dull tasks can also remove entry-level ladders, compress teams, and let managers say five people can now do the work of nine. Congrats, the boring task left. So did the training ground."
+        "searchMomentId": "task-substitution-risk",
+        "content": "That can happen, but it is not the only path. Some AI agents are becoming substitutes for human labor in specific tasks {{AI agents are becoming increasingly substitutable for human labor}}(1), and many companies still are not seeing meaningful gains from AI at the enterprise level {{most companies are not yet seeing meaningful enterprise-level gains from AI}}(2). If the gains are weak, managers may cut tasks before they create better roles."
       },
       {
         "id": "user-3",
         "role": "user",
-        "content": "But the macro picture is positive. WEF expects a net gain in jobs, and BLS shows strong growth in software, data, cybersecurity, and AI-adjacent roles."
+        "content": "Companies and schools can retrain people, so the upside should outweigh the disruption."
       },
       {
         "id": "assistant-3",
         "role": "assistant",
-        "searchMomentId": "net-jobs-skills",
-        "content": "Net gain is doing Olympic-level hand-waving there. WEF also says 92 million roles get displaced and 39% of key skills change. McKinsey sees 12 million U.S. occupational transitions. BLS growth in AI-adjacent jobs is real, but a displaced claims processor does not magically respawn as a machine-learning engineer with dental."
-      },
-      {
-        "id": "user-4",
-        "role": "user",
-        "content": "People can retrain. Companies need workers who know the business, so it makes sense to upskill employees instead of tossing them aside."
-      },
-      {
-        "id": "assistant-4",
-        "role": "assistant",
-        "searchMomentId": "job-quality-bargaining",
-        "content": "Sure, if firms choose patience over margin. OECD's warning is the quiet part: job quality can take the hit before headcount does. More monitoring, faster pace, thinner discretion, algorithmic evaluation, more stress. A job can survive and still get worse. That is not a victory parade, that is a badge swipe with vibes."
-      },
-      {
-        "id": "user-5",
-        "role": "user",
-        "content": "Productivity still matters. If AI helps novice workers perform better, that can spread opportunity and raise wages instead of killing jobs."
-      },
-      {
-        "id": "assistant-5",
-        "role": "assistant",
-        "searchMomentId": "job-quality-bargaining",
-        "content": "The NBER call-center result is genuinely hopeful: novices got a big lift. But it also shows the playbook being absorbed into the tool. Once software captures know-how, employers can share the gains, or they can redesign jobs, lower bargaining power, and buy fewer ladders. My side is not anti-AI. It is anti-fairytale. Good jobs require worker power, not just better autocomplete."
+        "searchMomentId": "retraining-gap",
+        "content": "Retraining helps, but it has to move as fast as the labor market changes. The skills list is shifting toward AI, data, leadership, and social influence {{AI and big data, leadership, and social influence will be high-demand skills over the next five years}}(1). At the same time, economists are still updating the basic measurements needed to see AI's labor effects clearly {{labor market and productivity measures may need changes to capture AI's effects}}(2). That is a shaky base for promising the upside will win."
       }
     ]
   },
   "phones-school": {
     "arenaId": "phones-school",
     "userPosition": "Schools should ban phones during the school day.",
-    "crimsonPosition": "Schools should restrict phones hard during instruction, but blanket daylong bans are too blunt because safety, accessibility, enforcement, and digital self-management still matter.",
-    "verdict": "The ban side wins the distraction diagnosis. CrimsonSeek wins the policy argument: phone-free learning time, yes, but not a one-size-fits-all school day ban. The smarter rule is tight classroom restriction, clear storage, narrow exceptions, parent communication channels, and actual measurement instead of vibes with a confiscation bucket.",
+    "crimsonPosition": "CrimsonSeek argues the strongest current countercase in the Phones in School debate, with source material woven directly into the reply.",
+    "verdict": "This saved Phones in School audit argues for a stricter-but-not-blanket approach, using readable counterpoints and clear inline evidence.",
     "searchMoments": [
       {
-        "id": "distraction-baseline",
-        "label": "Distraction baseline",
-        "query": "UNESCO smartphones school distraction Pew teens smartphone access JAMA school hours smartphone use",
-        "summary": "The first evidence check asks whether phone distraction is real. The source cards say yes, but they also show why a serious policy has to manage a near-universal youth technology, not pretend it can be wished out of student life.",
+        "id": "ban-vs-skills",
+        "label": "Ban vs skills",
+        "query": "Phones in school counter-evidence on full-day bans, student support, digital skills, and implementation challenges",
+        "summary": "Fresh Linkup check using teen survey data and government consultation material on phone restrictions, digital skills, and policy pilots.",
         "evidence": [
           {
-            "title": "Smartphones in school? Only when they clearly support learning",
-            "url": "https://www.unesco.org/en/articles/smartphones-school-only-when-they-clearly-support-learning",
-            "snippet": "UNESCO frames smartphones as a classroom disruption risk while still grounding school technology policy in whether a tool clearly supports learning.",
-            "sourceQuality": "International education policy source"
+            "title": "Internet & Technology - Research and data from Pew Research Center",
+            "url": "https://www.pewresearch.org/topic/internet-technology/",
+            "snippet": "Pew reports that about one in five teens support banning cellphones during the entire school day, including lunch and time between classes.",
+            "sourceQuality": "Research or institutional source"
           },
           {
-            "title": "How Teens and Parents Approach Screen Time",
-            "url": "https://www.pewresearch.org/internet/2024/03/11/how-teens-and-parents-approach-screen-time/",
-            "snippet": "Pew reports that 95% of U.S. teens have access to a smartphone and that teens describe mixed emotional effects when they go without one.",
-            "sourceQuality": "Nonpartisan survey research"
-          },
-          {
-            "title": "Smartphone Engagement During School Hours Among US Youths",
-            "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2837133",
-            "snippet": "JAMA Network Open measured active smartphone engagement during school hours, keeping the distraction concern anchored in observed behavior rather than hallway folklore.",
-            "sourceQuality": "Peer-reviewed medical journal"
+            "title": "Growing up in the online world: a national conversation - GOV.UK",
+            "url": "https://www.gov.uk/government/consultations/growing-up-in-the-online-world-a-national-consultation/growing-up-in-the-online-world-a-national-conversation",
+            "snippet": "The UK consultation is testing social media bans, curfews, and daily limits to learn about implementation challenges and potential impact.",
+            "sourceQuality": "Primary or official source"
           }
         ]
       },
       {
-        "id": "ban-outcomes",
-        "label": "Ban outcomes",
-        "query": "school cellphone bans academic achievement attendance Education Week NBER lockable pouches NCES phone restrictions",
-        "summary": "The second evidence check looks for the payoff. The evidence supports restrictions as a way to cut in-school phone access, but the academic and behavior results are mixed enough to make blanket-ban certainty look overcaffeinated.",
+        "id": "restriction-not-chaos",
+        "label": "Restriction, not chaos",
+        "query": "Phones in school counter-evidence on simple rules, exceptions, existing restrictions, and teacher workload",
+        "summary": "Fresh Linkup check on whether schools need an all-day ban or clearer restriction policies with room for legitimate exceptions.",
         "evidence": [
           {
-            "title": "Do Student Cellphone Bans Improve Academic Achievement?",
-            "url": "https://www.edweek.org/technology/do-student-cellphone-bans-improve-academic-achievement/2026/05",
-            "snippet": "Education Week reports on national research finding that lockable pouch bans reduced phone use but did not clearly lift achievement, attendance, or attention in the short term.",
-            "sourceQuality": "Education reporting on national research"
+            "title": "The Children's Wellbeing and School Act passes into law | Children's Commissioner for England",
+            "url": "https://www.childrenscommissioner.gov.uk/news-and-blogs/the-childrens-wellbeing-and-school-act-passes-into-law/",
+            "snippet": "The Children's Commissioner says the overwhelming majority of schools were already restricting device use before the new school smartphone ban.",
+            "sourceQuality": "Primary or official source"
           },
           {
-            "title": "The Effects of School Phone Bans: National Evidence from Lockable Pouches",
-            "url": "https://www.nber.org/papers/w35132",
-            "snippet": "NBER researchers found pouch adoption substantially reduced phone use, while first-year discipline and well-being effects were mixed and test-score gains were limited.",
-            "sourceQuality": "Economic research working paper"
-          },
-          {
-            "title": "New Schools Data Examine Violent Incidents, Bullying, Drug Possession, Restorative Practices, Security Staff, and More",
-            "url": "https://ies.ed.gov/learn/press-release/new-schools-data-examine-violent-incidents-bullying-drug-possession-restorative-practices-security",
-            "snippet": "NCES reported that 76% of U.S. public schools prohibited non-academic cellphone or smartphone use during school hours in 2021-22.",
-            "sourceQuality": "U.S. Department of Education data"
+            "title": "Growing up in the online world: a national conversation - GOV.UK",
+            "url": "https://www.gov.uk/government/consultations/growing-up-in-the-online-world-a-national-consultation/growing-up-in-the-online-world-a-national-conversation",
+            "snippet": "The UK consultation says pilots will test different interventions and show the implementation challenges of bans, curfews, and limits.",
+            "sourceQuality": "Primary or official source"
           }
         ]
       },
       {
-        "id": "exceptions-and-skills",
-        "label": "Exceptions and skills",
-        "query": "GOV.UK mobile phones schools reasonable adjustments APA adolescent social media coaching Education Week statewide cellphone ban local policy",
-        "summary": "The third evidence check tests the blanket part of the ban. The strongest sources keep pointing toward structured limits with exceptions, adult coaching, and local implementation instead of one rule pretending every student has the same life.",
+        "id": "attention-and-self-control",
+        "label": "Attention and self-control",
+        "query": "Phones in school counter-evidence on classroom attention, digital self-control, exam cheating, and healthy technology habits",
+        "summary": "Fresh Linkup check using exam malpractice data and digital-skills policy material to test whether bans alone teach responsible behavior.",
         "evidence": [
           {
-            "title": "Mobile phones in schools",
-            "url": "https://www.gov.uk/government/publications/mobile-phones-in-schools/mobile-phones-in-schools",
-            "snippet": "GOV.UK guidance supports phone-free schools by default, but it also names reasonable adjustments, medical needs, and individual circumstances that can require access.",
-            "sourceQuality": "Government guidance"
+            "title": "Thousands of students risk their qualifications by taking phones into exam hall as GCSE and A Level exams begin - GOV.UK",
+            "url": "https://www.gov.uk/government/news/thousands-of-students-risk-their-qualifications-by-taking-phones-into-exam-hall-as-gcse-and-a-level-exams-begin",
+            "snippet": "Ofqual warned that 2,225 cases of student malpractice involved mobile phones or smart devices in the previous summer exam series.",
+            "sourceQuality": "Primary or official source"
           },
           {
-            "title": "Health Advisory on Social Media Use in Adolescence",
-            "url": "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use",
-            "snippet": "APA advises limits and boundaries alongside adult discussion, monitoring, and coaching, which supports digital habit-building rather than confiscation as a full strategy.",
-            "sourceQuality": "Professional psychology guidance"
-          },
-          {
-            "title": "These School Leaders Don't Want a Statewide Cellphone Ban. Here's Why",
-            "url": "https://www.edweek.org/technology/these-school-leaders-dont-want-a-statewide-cellphone-ban-heres-why/2026/02",
-            "snippet": "Education Week highlights school leaders arguing for local discretion, a useful check on statewide or districtwide blanket bans that ignore implementation realities.",
-            "sourceQuality": "Education policy reporting"
+            "title": "Growing up in the online world: a national conversation - GOV.UK",
+            "url": "https://www.gov.uk/government/consultations/growing-up-in-the-online-world-a-national-consultation/growing-up-in-the-online-world-a-national-conversation",
+            "snippet": "The UK consultation says children need digital skills for social life, school, and future jobs that may not yet exist.",
+            "sourceQuality": "Primary or official source"
           }
         ]
       }
@@ -654,139 +482,101 @@ window.CRIMSONSEEK_AUDITS = {
       {
         "id": "user-1",
         "role": "user",
-        "content": "Schools should ban phones during the school day. Kids cannot focus when a slot machine is buzzing in their pocket between every paragraph."
+        "content": "Schools should ban phones during the school day because students cannot focus with a social slot machine nearby."
       },
       {
         "id": "assistant-1",
         "role": "assistant",
-        "searchMomentId": "distraction-baseline",
-        "content": "Distraction is real. You win that diagnosis cleanly. But the evidence also says phones are near-universal teen infrastructure, not a weird contraband yo-yo. A school policy has to reduce classroom drag without pretending medical alerts, family logistics, accessibility, and digital life vanish at first bell."
+        "searchMomentId": "ban-vs-skills",
+        "content": "The focus problem is real, but a full-day ban may skip the harder lesson. Only about one in five teens support banning phones for the entire school day {{about one in five teens support banning cellphones during the entire school day}}(1), and governments are still testing bans, curfews, and limits to see what actually works {{pilots are testing social media bans, curfews, and daily limits to learn about implementation challenges and impact}}(2). Class restrictions make sense; pretending phones disappear does not."
       },
       {
         "id": "user-2",
         "role": "user",
-        "content": "That sounds soft. If phones are allowed anywhere, they leak everywhere. Hallways, bathrooms, lunch, group chats, drama. Ban them bell to bell and students can breathe."
+        "content": "Exceptions make bans messy, but teachers need simple rules and a real break from notifications and group chats."
       },
       {
         "id": "assistant-2",
         "role": "assistant",
-        "content": "Bell-to-bell sounds tidy because it deletes the mess from the sentence. In the building, someone has to search, store, track, exempt, return, punish, and answer parents. Congratulations, you invented a second attendance office that specializes in rectangles."
+        "searchMomentId": "restriction-not-chaos",
+        "content": "Teachers do need simple rules. The counter is that simple does not have to mean total. Most schools were already restricting device use before national bans arrived {{the overwhelming majority of schools were already restricting device use}}(1), and policy pilots are still studying the implementation problems around bans, curfews, and limits {{pilots will show the implementation challenges of bans, curfews, and limits}}(2). A clear class-time rule can protect attention without making every health, access, or travel case a discipline fight."
       },
       {
         "id": "user-3",
         "role": "user",
-        "content": "Teachers already have enough work because of phones. A blanket ban makes enforcement simple: no phones, no arguments, no Snapchat court cases at lunch."
+        "content": "Digital self-control can wait. Classrooms should protect attention first."
       },
       {
         "id": "assistant-3",
         "role": "assistant",
-        "searchMomentId": "ban-outcomes",
-        "content": "Simple on paper, spicy in practice. The research trail says strict pouch-style bans can cut phone use, but the payoff on grades, attendance, attention, and behavior is mixed in the short term. If the cure needs constant policing and produces cloudy outcomes, maybe do not tattoo it onto every school day like sacred law."
-      },
-      {
-        "id": "user-4",
-        "role": "user",
-        "content": "Cloudy outcomes are still better than letting students scroll through algebra. Schools are for learning, not managing every possible exception."
-      },
-      {
-        "id": "assistant-4",
-        "role": "assistant",
-        "searchMomentId": "exceptions-and-skills",
-        "content": "Exceptions are not loopholes. They are students with diabetes monitors, disability accommodations, caregiving duties, transit needs, and messy home situations. Even pro-restriction guidance leaves room for them. The smarter policy is phone-free instruction, locked-away defaults, fast exceptions, and digital coaching. Less circus, more engineering."
-      },
-      {
-        "id": "user-5",
-        "role": "user",
-        "content": "Digital coaching is nice in theory. In reality, kids need a clean break. Adults can barely handle phones. Why expect seventh graders to self-regulate?"
-      },
-      {
-        "id": "assistant-5",
-        "role": "assistant",
-        "content": "Do not expect them to self-regulate cold. Train it. Keep phones away during class, make lunch rules explicit, give families an office contact route, protect medical access, and measure whether the policy improves learning instead of just improving adult morale. A blanket ban is a hammer. Schools need a toolkit."
+        "searchMomentId": "attention-and-self-control",
+        "content": "Attention should come first during lessons, but self-control cannot wait forever. Exam halls already have strict rules, yet thousands of phone and smart-device malpractice cases still happened {{2,225 cases of student malpractice involved mobile phones or smart devices}}(1). Schools also have to prepare students for a future where digital skills matter {{children need digital skills for social life, school, and future jobs}}(2). So the stronger policy is tight classroom control plus coached responsibility."
       }
     ]
   },
   "ai-investment": {
     "arenaId": "ai-investment",
     "userPosition": "AI is worth the investment for most companies right now.",
-    "crimsonPosition": "AI spending deserves a skeptical CFO lens because measurable ROI depends on workflow redesign, data readiness, governance, security, adoption, and disciplined value tracking.",
-    "verdict": "AI is worth serious experimentation, but CrimsonSeek wins this saved debate on the word most. The payoff is real for mature teams with clear use cases. For everyone else, the invoice arrives before the transformation.",
+    "crimsonPosition": "CrimsonSeek argues the strongest current countercase in the AI Worth the Investment debate, with source material woven directly into the reply.",
+    "verdict": "This saved AI investment audit argues for disciplined, measured adoption rather than blanket spending, with compact citations tied to business-risk evidence.",
     "searchMoments": [
       {
-        "id": "roi-scoreboard",
-        "label": "ROI scoreboard",
-        "query": "McKinsey BCG MIT NANDA generative AI enterprise ROI bottom line impact 2025",
-        "summary": "The first evidence check asks whether AI spending is broadly paying back. The source trail finds a split: adoption is loud, but enterprise-wide financial impact is still concentrated in a small high-performer group.",
-        "evidence": [
-          {
-            "title": "The State of AI: Global Survey 2025",
-            "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
-            "snippet": "McKinsey reports that meaningful enterprise-wide bottom-line impact from AI remains rare, with AI high performers representing about 6% of respondents.",
-            "sourceQuality": "Global executive survey and management research"
-          },
-          {
-            "title": "Are You Generating Value from AI? The Widening Gap",
-            "url": "https://www.bcg.com/publications/2025/are-you-generating-value-from-ai-the-widening-gap",
-            "snippet": "BCG finds only 5% of firms are generating strong AI value, while 35% are scaling AI and beginning to generate value.",
-            "sourceQuality": "Strategy consultancy research"
-          },
-          {
-            "title": "Scaling AI for results: Strategies from MIT Sloan Management Review",
-            "url": "https://mitsloan.mit.edu/ideas-made-to-matter/scaling-ai-results-strategies-mit-sloan-management-review",
-            "snippet": "MIT Sloan reports that researchers looking for examples of enterprises achieving major generative AI transformations did not find them, underscoring the gap between pilots and scaled results.",
-            "sourceQuality": "MIT Sloan business research coverage"
-          }
-        ]
-      },
-      {
-        "id": "implementation-drag",
-        "label": "Implementation drag",
-        "query": "Bain Gartner Deloitte generative AI proof of concept abandoned unclear business value data quality costs governance",
-        "summary": "The second evidence check asks whether buying tools is enough. The source trail says no with a straight face: pilots stall when data, risk controls, operating models, funding, and ownership are mushy.",
+        "id": "pilot-to-value-gap",
+        "label": "Pilot-to-value gap",
+        "query": "AI investment counter-evidence on generative AI pilots, business value, data quality, risk controls, and project abandonment",
+        "summary": "Fresh Linkup check using analyst and management research on why AI enthusiasm does not always become measurable business value.",
         "evidence": [
           {
             "title": "Gartner Predicts 30% of Generative AI Projects Will Be Abandoned After Proof of Concept By End of 2025",
             "url": "https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025",
-            "snippet": "Gartner attributes expected GenAI project abandonment to poor data quality, inadequate risk controls, escalating costs, and unclear business value.",
-            "sourceQuality": "Analyst forecast and enterprise technology research"
+            "snippet": "Gartner attributed expected GenAI project abandonment to poor data quality, inadequate risk controls, escalating costs, and unclear business value.",
+            "sourceQuality": "Analyst research"
           },
           {
-            "title": "Generative AI virtually ubiquitous in global business as the technology spreads at a near-unprecedented rate",
-            "url": "https://www.bain.com/about/media-center/press-releases/2024/generative-ai-virtually-ubiquitous-in-global-business-as-the-technology-spreads-at-a-near-unprecedented-rate--bain--company-proprietary-survey/",
-            "snippet": "Bain says companies are budgeting about $5 million per year on average for generative AI activities and infrastructure, rising to $50 million for 20% of the largest companies.",
-            "sourceQuality": "Proprietary enterprise survey"
-          },
-          {
-            "title": "State of Generative AI in the Enterprise Q4",
-            "url": "https://www2.deloitte.com/us/en/pages/about-deloitte/articles/press-releases/state-of-generative-ai.html",
-            "snippet": "Deloitte reports leaders are building bridges to ROI while recognizing that scaling GenAI requires patience, nuance, and governance work.",
-            "sourceQuality": "Global enterprise survey"
+            "title": "AI-Generated \"Workslop\" Is Destroying Productivity",
+            "url": "https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity",
+            "snippet": "Harvard Business Review reported that many workers are using generative AI, but few are seeing it create real value.",
+            "sourceQuality": "Research or institutional source"
           }
         ]
       },
       {
-        "id": "governance-tax",
-        "label": "Governance tax",
-        "query": "Deloitte IBM Gartner AI governance risk controls responsible AI enterprise ROI security compliance",
-        "summary": "The third evidence check prices the boring stuff. The source trail shows that serious AI programs need governance, ownership, security, measurement, data foundations, and human oversight. Translation: the spreadsheet has legs.",
+        "id": "roi-discipline",
+        "label": "ROI discipline",
+        "query": "AI investment counter-evidence on small productivity gains, work quality, ROI measurement, and governance requirements",
+        "summary": "Fresh Linkup check on whether small task gains justify AI spending without measurement, review loops, and governance.",
         "evidence": [
           {
-            "title": "State of Generative AI in the Enterprise Q4",
-            "url": "https://www2.deloitte.com/us/en/pages/about-deloitte/articles/press-releases/state-of-generative-ai.html",
-            "snippet": "Deloitte finds 69% of respondents say fully implementing a generative AI governance strategy will take more than a year.",
-            "sourceQuality": "Global enterprise survey"
-          },
-          {
-            "title": "AI in Action 2024 Report",
-            "url": "https://www.ibm.com/think/reports/ai-in-action",
-            "snippet": "IBM says AI leaders differ through strategy, technical staffing, flexible infrastructure, accessible governed data, and targeted applications.",
-            "sourceQuality": "IBM and Harris Poll global business research"
+            "title": "AI-Generated \"Workslop\" Is Destroying Productivity",
+            "url": "https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity",
+            "snippet": "Harvard Business Review describes workslop as AI-generated work that looks polished but creates extra burden for coworkers.",
+            "sourceQuality": "Research or institutional source"
           },
           {
             "title": "Gartner Survey Finds 45% of Organizations With High AI Maturity Keep AI Projects Operational for at Least Three Years",
             "url": "https://www.gartner.com/en/newsroom/press-releases/2025-06-30-gartner-survey-finds-forty-five-percent-of-organizations-with-high-artificial-intelligence-maturity-keep-artificial-intelligence-projects-operational-for-at-least-three-years",
-            "snippet": "Gartner finds high-maturity organizations are more likely to run ROI analysis, analyze risk factors, measure customer impact, and centralize AI governance and infrastructure.",
-            "sourceQuality": "Analyst survey on AI maturity"
+            "snippet": "Gartner says high-maturity organizations are more likely to run ROI analysis, analyze risks, measure customer impact, and centralize AI governance.",
+            "sourceQuality": "Analyst research"
+          }
+        ]
+      },
+      {
+        "id": "strategy-before-speed",
+        "label": "Strategy before speed",
+        "query": "AI investment counter-evidence on waiting, competitive advantage, proprietary data, governance, and agentic convergence",
+        "summary": "Fresh Linkup check on whether moving fast with generic AI tools creates advantage or pushes firms toward the same decisions.",
+        "evidence": [
+          {
+            "title": "Beware the Agentic Convergence Trap",
+            "url": "https://hbr.org/2026/05/beware-the-agentic-convergence-trap",
+            "snippet": "Harvard Business Review warns that firms using the same public signals can build the same model of the market and lose strategic variation.",
+            "sourceQuality": "Research or institutional source"
+          },
+          {
+            "title": "Gartner Survey Finds 45% of Organizations With High AI Maturity Keep AI Projects Operational for at Least Three Years",
+            "url": "https://www.gartner.com/en/newsroom/press-releases/2025-06-30-gartner-survey-finds-forty-five-percent-of-organizations-with-high-artificial-intelligence-maturity-keep-artificial-intelligence-projects-operational-for-at-least-three-years",
+            "snippet": "Gartner links AI maturity with ROI analysis, risk analysis, customer-impact measurement, and centralized AI governance.",
+            "sourceQuality": "Analyst research"
           }
         ]
       }
@@ -795,67 +585,35 @@ window.CRIMSONSEEK_AUDITS = {
       {
         "id": "user-1",
         "role": "user",
-        "content": "AI is worth the investment for most companies right now. The tools are cheap compared with labor, adoption is moving fast, and companies that wait will hand the learning curve to competitors."
+        "content": "AI is worth the investment for most companies right now because the learning curve matters and tools are getting cheaper."
       },
       {
         "id": "assistant-1",
         "role": "assistant",
-        "searchMomentId": "roi-scoreboard",
-        "content": "Bold start. Tiny problem: the scoreboard is not a parade. McKinsey puts AI high performers at about 6%, BCG says only 5% are generating strong value, and MIT Sloan found major enterprise GenAI transformations hard to locate. AI can pay. Most companies are still looking for the receipt."
+        "searchMomentId": "pilot-to-value-gap",
+        "content": "Cheaper tools lower the entry fee, but they do not make the investment good. Gartner warned that GenAI pilots can fail for basic reasons like bad data, weak risk controls, rising costs, and unclear business value {{GenAI project abandonment was tied to poor data quality, inadequate risk controls, escalating costs, and unclear business value}}(1). HBR also reports that many workers use AI without seeing real value {{many workers are using generative AI, but few are seeing it create real value}}(2). The learning curve only helps if the work improves."
       },
       {
         "id": "user-2",
         "role": "user",
-        "content": "But even modest gains justify the spend. If employees save a few hours a week on writing, coding, support, analysis, and sales prep, the ROI is obvious."
+        "content": "Even small gains in writing, coding, support, analysis, and sales prep can justify licenses and training."
       },
       {
         "id": "assistant-2",
         "role": "assistant",
-        "content": "Obvious ROI is usually where budgets go to nap. Time saved is not the same as cash captured. If the workflow does not change, the metric becomes vibes per seat. Cute dashboard, sad CFO."
+        "searchMomentId": "roi-discipline",
+        "content": "Small gains count, but only if they are real gains. HBR calls out workslop: AI output that looks polished but creates more work for coworkers {{AI-generated work can look polished but create extra burden for coworkers}}(1). Mature AI teams do more than buy seats; they measure ROI, risk, customer impact, and governance {{high-maturity organizations are more likely to run ROI analysis, analyze risks, measure customer impact, and centralize AI governance}}(2). Without that, licenses can become a very tidy waste."
       },
       {
         "id": "user-3",
         "role": "user",
-        "content": "Companies have to learn by doing. Pilots are the price of capability. You do not build AI muscle by sitting out the cycle and reading trend reports."
+        "content": "Companies that wait will lose process knowledge while competitors build habits, data pipelines, and governance."
       },
       {
         "id": "assistant-3",
         "role": "assistant",
-        "searchMomentId": "implementation-drag",
-        "content": "Learning by doing is fine. Learning by funding a fog machine is not. Gartner flags abandoned GenAI proofs of concept from poor data, weak risk controls, cost creep, and unclear business value. Bain says spending is already real money. If the pilot has no owner, metric, or process change, it is not muscle. It is cardio in a meeting room."
-      },
-      {
-        "id": "user-4",
-        "role": "user",
-        "content": "That is why the right move is to invest now but focus on use cases. Customer support, software development, finance operations, marketing, and knowledge management all have obvious productivity upside."
-      },
-      {
-        "id": "assistant-4",
-        "role": "assistant",
-        "searchMomentId": "governance-tax",
-        "content": "Use cases matter, yes. The invoice has line items. Deloitte says most leaders expect GenAI governance to take more than a year. IBM points to strategy, technical staff, infrastructure, governed data, and targeted apps as the divider. Gartner's mature firms run ROI and risk analysis, then centralize governance. That is not plug-and-play. That is a program."
-      },
-      {
-        "id": "user-5",
-        "role": "user",
-        "content": "Still, doing nothing is riskier. AI will reshape industries. The companies that build data pipelines, policies, and employee habits now will be ready when the tools get better."
-      },
-      {
-        "id": "assistant-5",
-        "role": "assistant",
-        "searchMomentId": "roi-scoreboard",
-        "content": "I am not arguing for couch-based strategy. Invest where the pain is measurable and the workflow owner is awake. But your claim says most companies, right now. The evidence says winners are the disciplined minority: narrow use cases, redesigned processes, governed data, clear measurement, real adoption. Everyone else is buying a shiny intern with cloud bills."
-      },
-      {
-        "id": "user-6",
-        "role": "user",
-        "content": "Most companies can start small, though. A few licenses, employee training, and internal champions are not huge bets. That is still investment, and it compounds."
-      },
-      {
-        "id": "assistant-6",
-        "role": "assistant",
-        "searchMomentId": "implementation-drag",
-        "content": "Small starts are sane. The phrase worth the investment still needs a denominator. Licenses are the cover charge. The real tab is integration, data cleanup, review loops, security, retraining, procurement, vendor risk, and managers learning how to measure work without inventing nonsense KPIs. Compounding works when the principal is real."
+        "searchMomentId": "strategy-before-speed",
+        "content": "Waiting forever is bad, but rushing with the same generic tools can erase advantage. HBR warns that companies using the same public signals can end up building the same market model {{firms using the same public signals can build the same model of the market}}(1). The better counterplan is narrow investment with mature controls {{AI maturity is linked with ROI analysis, risk analysis, customer-impact measurement, and centralized governance}}(2). Move carefully where the payoff is measurable."
       }
     ]
   }

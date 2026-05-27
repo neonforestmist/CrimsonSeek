@@ -20,10 +20,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,0,0"
         />
       </head>
-      <body className="relative min-h-screen antialiased">
+      <body className="relative min-h-screen overflow-x-clip antialiased">
         <Background />
         <SiteHeader />
-        <div className="relative pt-14 lg:pt-0">{children}</div>
+        <div className="relative max-w-full overflow-x-clip pt-14 lg:pt-0">{children}</div>
       </body>
     </html>
   );

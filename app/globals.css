@@ -49,6 +49,9 @@
   html,
   body {
     min-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
     background: var(--color-canvas);
     color: var(--color-ink);
     font-family: var(--font-sans);
@@ -60,7 +63,9 @@
   }
 
   body {
-    overflow-x: hidden;
+    position: relative;
+    overscroll-behavior-x: none;
+    touch-action: pan-y;
   }
 
   ::selection {

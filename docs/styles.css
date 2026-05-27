@@ -33,10 +33,7 @@ body {
   min-height: 100%;
   margin: 0;
   overflow-x: hidden;
-  background:
-    radial-gradient(circle at 18% 12%, rgba(217, 79, 48, 0.11), transparent 34rem),
-    radial-gradient(circle at 86% 38%, rgba(235, 226, 208, 0.92), transparent 36rem),
-    linear-gradient(180deg, #fbf3ea 0%, var(--canvas) 46%, #f7f4ea 100%);
+  background: var(--canvas);
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -176,6 +173,33 @@ code {
   height: 1rem;
   margin-right: 0.45rem;
   fill: currentColor;
+}
+
+.github-pill img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.45rem;
+}
+
+.linkup-pill {
+  border: 1px solid rgba(221, 213, 196, 0.74);
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--ink-soft);
+}
+
+.linkup-pill img {
+  width: 4.2rem;
+  height: auto;
+  margin-right: 0;
+}
+
+.linkup-pill span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 .readme-shell,
@@ -388,6 +412,8 @@ pre code {
 .examples-intro {
   max-width: 48rem;
   margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(221, 213, 196, 0.75);
+  padding-bottom: 2rem;
 }
 
 .examples-intro h1 {
@@ -424,6 +450,19 @@ pre code {
     transform 160ms ease;
 }
 
+.audit-example-card {
+  min-height: 19.5rem;
+  overflow: hidden;
+  padding: 0;
+}
+
+.card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+
 .example-card:hover {
   border-color: var(--accent-300);
   background: white;
@@ -440,6 +479,16 @@ pre code {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.2;
+}
+
+.card-heading small {
+  display: block;
+  margin-top: 0.28rem;
+  color: var(--accent-700);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .arena-mark {
@@ -466,12 +515,22 @@ pre code {
   fill: currentColor;
 }
 
-.arena-mark.stroke-icon svg {
+.arena-mark .duo-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.08rem;
+}
+
+.arena-mark .duo-icon svg {
+  width: 1.03rem;
+  height: 1.03rem;
+}
+
+.arena-mark .stroke-mark {
   fill: none;
   stroke: currentColor;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 2.2;
 }
 
 .card-copy {
@@ -479,6 +538,17 @@ pre code {
   color: var(--ink-muted);
   font-size: 0.9rem;
   line-height: 1.7;
+}
+
+.strong-copy {
+  color: var(--ink);
+  font-weight: 720;
+  line-height: 1.65;
+}
+
+.verdict-copy {
+  margin-top: 0.75rem;
+  display: block;
 }
 
 .card-footer {
@@ -493,6 +563,11 @@ pre code {
   font-size: 0.9rem;
   font-weight: 700;
   line-height: 1.5;
+}
+
+.audit-example-card .card-footer {
+  margin-top: 0;
+  padding: 1rem 1.25rem;
 }
 
 .card-footer span:last-child {
@@ -913,6 +988,7 @@ pre code {
 .audit-workspace {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
+  align-items: start;
   min-width: 0;
   min-height: calc(100dvh - 3.5rem);
   gap: 0;
@@ -935,9 +1011,9 @@ pre code {
 
 .debate-thread-panel {
   display: flex;
-  height: calc(100dvh - 5.5rem);
+  min-height: calc(100dvh - 5.5rem);
   flex-direction: column;
-  overflow: hidden;
+  overflow: visible;
   border-radius: 0.55rem;
 }
 
@@ -1008,8 +1084,7 @@ pre code {
 .thread-scroll {
   min-height: 0;
   flex: 1;
-  overflow-y: auto;
-  overscroll-behavior: contain;
+  overflow: visible;
   background: radial-gradient(circle at 50% 0%, rgba(217, 79, 48, 0.08), transparent 35%);
   padding: 1rem 1.25rem 1.35rem;
 }
@@ -1094,8 +1169,55 @@ pre code {
   white-space: pre-wrap;
 }
 
+.message-paragraphs {
+  display: grid;
+  gap: 0.75rem;
+}
+
 .message-card.is-counter .message-content {
   color: var(--ink);
+}
+
+.citation-link {
+  display: inline-flex;
+  min-width: 1.38rem;
+  height: 1.38rem;
+  transform: translateY(-1px);
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--accent-100);
+  border-radius: 999px;
+  background: var(--accent-50);
+  color: var(--accent-800, var(--accent-700));
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 850;
+  line-height: 1;
+  margin: 0 0.08rem;
+  padding: 0 0.36rem;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease;
+}
+
+.citation-cluster {
+  display: inline;
+}
+
+.citation-material {
+  border-radius: 0.28rem;
+  background: rgba(255, 241, 236, 0.72);
+  box-shadow: 0 0 0 1px rgba(251, 191, 170, 0.55);
+  color: color-mix(in oklab, var(--accent-800, var(--accent-700)) 78%, var(--ink) 22%);
+  font-weight: 720;
+  padding: 0.12rem 0.25rem;
+}
+
+.citation-link:hover {
+  border-color: var(--accent-300);
+  background: white;
 }
 
 .message-source-button {
@@ -1189,10 +1311,29 @@ pre code {
   font-weight: 760;
 }
 
+.source-reference-label {
+  display: inline-flex;
+  height: 1.5rem;
+  align-items: center;
+  gap: 0.22rem;
+  border: 1px solid rgba(221, 213, 196, 0.72);
+  border-radius: 999px;
+  background: rgba(245, 238, 226, 0.7);
+  padding: 0 0.62rem;
+  color: var(--ink-muted);
+  font-size: 0.72rem;
+  font-weight: 780;
+}
+
+.source-reference-label .material-symbols-rounded {
+  color: var(--accent-600);
+  font-size: 0.9rem;
+}
+
 .source-reference {
   display: inline-flex;
-  min-width: 1.25rem;
-  height: 1.25rem;
+  min-width: 2rem;
+  height: 1.5rem;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--accent-100);
@@ -1203,17 +1344,29 @@ pre code {
   font: inherit;
   font-weight: 800;
   line-height: 1;
+  padding: 0 0.58rem;
   transition:
     background 160ms ease,
     border-color 160ms ease;
 }
 
-.source-reference:hover {
+.source-reference:hover,
+.source-reference.is-selected {
   border-color: var(--accent-300);
+}
+
+.source-reference:hover {
   background: white;
 }
 
+.source-reference.is-selected {
+  background: var(--accent-600);
+  color: white;
+}
+
 .evidence-rail-panel {
+  position: sticky;
+  top: 4.5rem;
   display: flex;
   height: calc(100dvh - 5.5rem);
   min-width: 0;
@@ -1262,6 +1415,7 @@ pre code {
 .rail-scroll {
   min-height: 0;
   flex: 1;
+  overscroll-behavior: contain;
   overflow-y: auto;
   padding: 0 1rem 1rem;
 }
@@ -1307,6 +1461,7 @@ pre code {
 
 .rail-source-card {
   display: block;
+  scroll-margin-top: 1rem;
   border: 1px solid rgba(221, 213, 196, 0.72);
   border-radius: 0.55rem;
   background: rgba(255, 255, 255, 0.68);
@@ -1323,6 +1478,14 @@ pre code {
   background: white;
 }
 
+.rail-source-card.is-highlighted {
+  border-color: var(--accent-300);
+  background: rgba(255, 241, 236, 0.86);
+  box-shadow:
+    0 0 0 3px rgba(217, 79, 48, 0.14),
+    0 14px 32px -26px rgba(150, 47, 24, 0.78);
+}
+
 .source-card-topline {
   display: flex;
   align-items: center;
@@ -1332,6 +1495,16 @@ pre code {
   color: var(--accent-700);
   font-size: 0.68rem;
   font-weight: 800;
+}
+
+.source-card-pill {
+  display: inline-flex;
+  height: 1.45rem;
+  align-items: center;
+  border: 1px solid var(--accent-100);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.82);
+  padding: 0 0.5rem;
 }
 
 .source-card-topline .material-symbols-rounded {
@@ -1355,14 +1528,10 @@ pre code {
 }
 
 .rail-source-card p {
-  display: -webkit-box;
   margin: 0.58rem 0 0;
-  overflow: hidden;
   color: var(--ink-muted);
   font-size: 0.78rem;
   line-height: 1.55;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
 }
 
 .source-quality {
@@ -1395,6 +1564,10 @@ pre code {
 }
 
 @media (max-width: 980px) {
+  body.sources-open {
+    overflow: hidden;
+  }
+
   .audit-app-grid {
     display: block;
   }

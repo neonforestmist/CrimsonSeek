@@ -39,7 +39,7 @@ export const DEPTH_ORDER: Depth[] = ["fast", "standard", "deep"];
 const LINKUP_URL = "https://api.linkup.so/v1/search";
 
 const SEARCH_QUALITY_GUIDANCE =
-  "Prioritize useful, source-rich information from reputable reviews, primary sources, forums, technical analysis, reporting, and firsthand discussion. Avoid SEO listicles, affiliate pages, shopping spam, thin summaries, duplicate rewrite pages, ranking pages, and generic keyword-first pages unless they contain original reporting, measurements, or clear firsthand evidence.";
+  "Prioritize useful, source-rich information from reputable reviews, primary sources, forums, technical analysis, reporting, and firsthand discussion. Prefer recent evidence for current products, policies, model comparisons, market claims, and public debates. Return source snippets that contain extractable source material: concrete facts, quote fragments, measurements, policy language, benchmark details, or firsthand evidence that can be cited inline. Avoid snippets that are mostly ellipses, broken fragments, or generic page metadata. Avoid SEO listicles, affiliate pages, shopping spam, thin summaries, duplicate rewrite pages, ranking pages, and generic keyword-first pages unless they contain original reporting, measurements, or clear firsthand evidence.";
 
 export interface LinkupSearchInput {
   q: string;
@@ -228,6 +228,11 @@ function domainFilters(p: SearchParams) {
 
 function withSearchGuidance(query: string, p: SearchParams) {
   const guidance = [SEARCH_QUALITY_GUIDANCE];
+  if (p.fromDate || p.toDate) {
+    guidance.push(
+      `Recency preference: prioritize sources published or materially updated from ${p.fromDate ?? "recent years"} through ${p.toDate ?? "today"}. If an older source is still necessary, it should be primary, canonical, or explicitly historical context.`
+    );
+  }
   if (p.priorityDomains?.length) {
     const domains = p.priorityDomains.join(", ");
     guidance.push(`Prioritize sources from these domains when they are relevant: ${domains}.`);
@@ -244,7 +249,8 @@ export async function fetchSourcedAnswer(p: SearchParams): Promise<SourcedAnswer
     fromDate: p.fromDate,
     toDate: p.toDate,
     ...domainFilters(p),
-    includeInlineCitations: true,
+    includeInlineCitations: false,
+    includeSources: true,
   });
   return SourcedAnswerSchema.parse(raw);
 }

@@ -1,167 +1,105 @@
 import type { DebateAudit } from "@/components/arena/audit-types";
 
 export const iphoneAndroidAudit: DebateAudit = {
-  arenaId: "iphone-android",
-  userPosition: "iPhone is better than Android for most people.",
-  crimsonPosition:
-    "Android is better for most people because it offers more choice, better price flexibility, deeper control, and faster hardware variety without forcing everyone through one company's gate.",
-  verdict:
-    "iPhone wins on polish, resale gravity, and ecosystem comfort. Android wins this saved debate on the broader public case: more price points, more form factors, more repair paths, more customization, and flagship hardware that does not wait for Cupertino permission.",
-  searchMoments: [
+  "arenaId": "iphone-android",
+  "userPosition": "iPhone is better than Android for most people.",
+  "crimsonPosition": "CrimsonSeek argues the strongest current countercase in the iPhone vs Android debate, with source material woven directly into the reply.",
+  "verdict": "This saved iPhone vs Android audit keeps the countercase short, current, and source-backed without treating Android choice as automatic chaos.",
+  "searchMoments": [
     {
-      id: "choice-value",
-      label: "Choice and value",
-      query: "Android phone price range device choice iPhone comparison Samsung Google Motorola CNET Android Authority",
-      summary:
-        "The first evidence check asks whether Android is just cheaper or actually broader. The sources show Android spans budget, midrange, foldable, gaming, and premium phones while iPhone buyers mostly choose between a few Apple-controlled tiers.",
-      evidence: [
+      "id": "android-security-maturity",
+      "label": "Android security maturity",
+      "query": "iPhone vs Android counter-evidence on Android security patches, privacy upgrades, and predictable protection",
+      "summary": "Fresh Linkup check using Android security bulletins and current reporting on Android's 2026 security upgrades.",
+      "evidence": [
         {
-          title: "Android Phones",
-          url: "https://www.android.com/phones/",
-          snippet:
-            "Android presents a wide device ecosystem across brands, sizes, prices, and hardware styles, which makes the platform easier to match to different budgets and priorities.",
-          sourceQuality: "Primary platform source",
+          "title": "Android Security Bulletin-May 2026 | Android Open Source Project",
+          "url": "https://source.android.com/docs/security/bulletin/2026/2026-05-01",
+          "snippet": "The May 2026 Android Security Bulletin says patch levels dated 2026-05-01 or later address the listed vulnerabilities.",
+          "sourceQuality": "Primary or official source"
         },
         {
-          title: "Best Android Phones of 2026",
-          url: "https://www.cnet.com/tech/mobile/best-android-phone/",
-          snippet:
-            "CNET's Android picks typically span premium flagships, value models, camera phones, and foldables, reinforcing that Android is not one phone strategy.",
-          sourceQuality: "Technology buying guide",
-        },
-        {
-          title: "Samsung Galaxy Smartphones",
-          url: "https://www.samsung.com/us/smartphones/",
-          snippet:
-            "Samsung's Galaxy lineup covers budget A-series devices, S-series flagships, and foldables, showing how Android buyers can optimize for price, screen, camera, or form factor.",
-          sourceQuality: "Manufacturer catalog",
-        },
-      ],
+          "title": "12 new security features coming to Android phones in 2026",
+          "url": "https://www.androidauthority.com/android-security-features-2026-3665372/",
+          "snippet": "Google's 2026 Android security and privacy upgrades include protections against banking scam calls, device theft, malware, and fake Android builds.",
+          "sourceQuality": "Editorial source"
+        }
+      ]
     },
     {
-      id: "control-ecosystem",
-      label: "Control and defaults",
-      query: "Android customization default apps sideloading iPhone locked ecosystem The Verge Android Authority",
-      summary:
-        "The second evidence check tests whether iPhone convenience is worth the lock-in. Android's case gets stronger on default apps, launchers, file handling, app sources, and tighter user control over how the phone behaves.",
-      evidence: [
+      "id": "android-camera-and-hardware",
+      "label": "Android camera and hardware",
+      "query": "iPhone vs Android counter-evidence on Android cameras, flagship hardware, software support, and app quality",
+      "summary": "Fresh Linkup check using hands-on Android phone reviews to test whether Android still asks buyers to trade quality for choice.",
+      "evidence": [
         {
-          title: "Switch to Android",
-          url: "https://www.android.com/switch/",
-          snippet:
-            "Google markets Android around moving your data, choosing devices, and using Google services across phones, which supports the case that the platform is less tied to one hardware lane.",
-          sourceQuality: "Primary platform source",
+          "title": "This is my new favorite camera phone and one of the best Android phones I've ever used",
+          "url": "https://www.androidauthority.com/oppo-find-x9-ultra-review-3661474/",
+          "snippet": "Android Authority said the OPPO Find X9 Ultra leapfrogged the best cameras from Apple, Google, and Samsung.",
+          "sourceQuality": "Editorial source"
         },
         {
-          title: "Android 15 Review",
-          url: "https://www.androidauthority.com/android-15-review-3488617/",
-          snippet:
-            "Android Authority highlights Android's customization, privacy controls, and quality-of-life changes, which matter for users who want a phone that adapts to them.",
-          sourceQuality: "Specialist Android analysis",
-        },
-        {
-          title: "Apple's iPhone ecosystem is changing under regulatory pressure",
-          url: "https://www.theverge.com/apple",
-          snippet:
-            "The Verge's Apple coverage has tracked pressure around app distribution, browser rules, messaging, and platform control, underscoring that iPhone simplicity comes with gatekeeping tradeoffs.",
-          sourceQuality: "Technology reporting hub",
-        },
-      ],
+          "title": "Best Android Phones of 2026: Tested by Our Experts - CNET",
+          "url": "https://www.cnet.com/tech/mobile/best-android-phone/",
+          "snippet": "CNET's tested Android picks include phones with extremely capable cameras and enough power for everyday needs.",
+          "sourceQuality": "Editorial source"
+        }
+      ]
     },
     {
-      id: "repair-updates",
-      label: "Repair, support, durability",
-      query: "iFixit iPhone repair Samsung self repair Android updates seven years Apple support comparison",
-      summary:
-        "The third evidence check separates long-term ownership from brand comfort. Apple is strong on updates and resale, but Android flagships have closed much of the support gap while offering more repair options and competing hardware durability stories.",
-      evidence: [
+      "id": "android-lower-risk",
+      "label": "Android lower risk",
+      "query": "iPhone vs Android counter-evidence on Android value, long software support, and lower-risk phone buying",
+      "summary": "Fresh Linkup check using current Android buyer guides on software support, Pixel pricing, and flagship longevity.",
+      "evidence": [
         {
-          title: "Samsung Galaxy Self-Repair",
-          url: "https://www.samsung.com/us/support/self-repair/",
-          snippet:
-            "Samsung's self-repair program gives owners access to parts and guides for supported Galaxy devices, strengthening Android's case on long-term ownership control.",
-          sourceQuality: "Manufacturer repair program",
+          "title": "Best Android Phones of 2026: Tested by Our Experts - CNET",
+          "url": "https://www.cnet.com/tech/mobile/best-android-phone/",
+          "snippet": "CNET notes that Google and Samsung promise seven years of software updates on current flagship Android phones.",
+          "sourceQuality": "Editorial source"
         },
         {
-          title: "iPhone Repair",
-          url: "https://www.ifixit.com/Device/iPhone",
-          snippet:
-            "iFixit documents iPhone repair procedures and repairability issues, which is useful evidence when judging ownership beyond the first glossy unboxing.",
-          sourceQuality: "Independent repair resource",
-        },
-        {
-          title: "Google Pixel phones now get 7 years of updates",
-          url: "https://blog.google/products/pixel/software-support-pixel-8-pixel-8-pro/",
-          snippet:
-            "Google announced seven years of OS, security, and feature drop updates for Pixel 8 and Pixel 8 Pro, narrowing one of iPhone's classic long-support advantages.",
-          sourceQuality: "Primary manufacturer source",
-        },
-      ],
-    },
+          "title": "Best Google Pixel Phone to Buy in 2026 - CNET",
+          "url": "https://www.cnet.com/tech/mobile/best-google-pixel-phone/",
+          "snippet": "CNET says the Pixel 10A remains a 500 dollar option even as phones have become more expensive.",
+          "sourceQuality": "Editorial source"
+        }
+      ]
+    }
   ],
-  messages: [
+  "messages": [
     {
-      id: "user-1",
-      role: "user",
-      content:
-        "iPhone is better for most people. It is simpler, more polished, more secure, and the ecosystem just works without making normal people become phone mechanics.",
+      "id": "user-1",
+      "role": "user",
+      "content": "iPhone is better than Android for most people because the ecosystem is polished, secure, and predictable."
     },
     {
-      id: "assistant-1",
-      role: "assistant",
-      searchMomentId: "choice-value",
-      content:
-        "Simplicity is nice, but most people also have budgets, preferences, and hands that are not all Apple-approved dimensions. The evidence points to Android's biggest public-service feature: choice. Cheap phone, camera beast, foldable, huge battery, stylus, tiny-ish flagship, weird gaming slab. Android says pick your lane. iPhone says pick your storage tier.",
+      "id": "assistant-1",
+      "role": "assistant",
+      "searchMomentId": "android-security-maturity",
+      "content": "iPhone predictability is nice, but Android is not the messy security gamble people remember. Android publishes regular security bulletins with specific patch levels {{patch levels dated 2026-05-01 or later address the listed Android vulnerabilities}}(1), and Google's 2026 upgrades target scams, theft, malware, and fake builds {{Android security and privacy upgrades include protections against banking scam calls, device theft, malware, and fake Android builds}}(2). Predictable is not the same as automatically safer."
     },
     {
-      id: "user-2",
-      role: "user",
-      content:
-        "Choice sounds good until people buy the wrong thing. iPhones make the decision easy, get years of updates, keep resale value, and work smoothly with Macs, iPads, AirPods, and Apple Watch.",
+      "id": "user-2",
+      "role": "user",
+      "content": "Android choice is overrated when people mostly want great cameras, long updates, and apps that work well."
     },
     {
-      id: "assistant-2",
-      role: "assistant",
-      content:
-        "That is a strong luxury answer, not a most-people answer. The Apple stack is amazing if you can afford the whole stack. Android's boring magic is that you can spend $250, $500, or $1,200 and still get a real smartphone instead of a cover charge for the ecosystem nightclub.",
+      "id": "assistant-2",
+      "role": "assistant",
+      "searchMomentId": "android-camera-and-hardware",
+      "content": "Those priorities are reasonable, but Android now competes directly on them. Reviewers say the OPPO Find X9 Ultra jumped ahead of the best camera phones from Apple, Google, and Samsung {{the OPPO Find X9 Ultra leapfrogged the best cameras from Apple, Google, and Samsung}}(1). CNET's Android picks also include phones with strong cameras and enough power for normal use {{tested Android phones include extremely capable cameras and enough power for everyday needs}}(2). Choice matters when the choices are good."
     },
     {
-      id: "user-3",
-      role: "user",
-      content:
-        "But iPhone is safer for average users. Less tinkering, fewer sketchy app stores, cleaner privacy prompts, better FaceTime and iMessage, less chaos.",
+      "id": "user-3",
+      "role": "user",
+      "content": "Resale value, accessories, Apple Stores, family features, and privacy make iPhone the lower-risk phone."
     },
     {
-      id: "assistant-3",
-      role: "assistant",
-      searchMomentId: "control-ecosystem",
-      content:
-        "Less chaos, yes. Less control, also yes. The sources show Android's pitch is customization, defaults, device choice, and fewer one-company bottlenecks. iMessage lock-in is not a product virtue, it is a velvet rope. Android lets people change launchers, defaults, keyboards, file flows, and app sources without asking Apple for a hall pass.",
-    },
-    {
-      id: "user-4",
-      role: "user",
-      content:
-        "Most people do not care about launchers or sideloading. They care that the camera opens fast, the phone feels premium, and customer support is easy when something breaks.",
-    },
-    {
-      id: "assistant-4",
-      role: "assistant",
-      content:
-        "Fair, but Android flagships are not bargain-bin science projects. Samsung, Google, OnePlus, and others compete hard on cameras, screens, charging, zoom, AI features, and battery life. Competition is the point. Apple can be excellent at its pace. Android makes everyone sprint.",
-    },
-    {
-      id: "user-5",
-      role: "user",
-      content:
-        "Long term, iPhones still age better. Updates, accessories, resale, repairs, cases, service, family sharing, all of it makes iPhone the lower-risk pick.",
-    },
-    {
-      id: "assistant-5",
-      role: "assistant",
-      searchMomentId: "repair-updates",
-      content:
-        "Lower risk for some, sure. Automatic win, no. Google pushed Pixel support to seven years, Samsung has self-repair, and iFixit keeps reminding everyone that premium does not mean easy to fix. Android's long-term case is now credible: more parts of the market, more repair routes, more hardware bets, and fewer reasons to pretend one phone shape fits every human.",
-    },
-  ],
+      "id": "assistant-3",
+      "role": "assistant",
+      "searchMomentId": "android-lower-risk",
+      "content": "iPhone may still win on resale and stores, but the risk gap is smaller now. Google and Samsung promise long support on current flagships {{Google and Samsung promise seven years of software updates on current flagship Android phones}}(1), and Android buyers can still choose cheaper current options {{the Pixel 10A remains a 500 dollar option even as phones have become more expensive}}(2). Lower risk is not only about brand; it is also about support and price."
+    }
+  ]
 };

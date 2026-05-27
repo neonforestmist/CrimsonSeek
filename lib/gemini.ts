@@ -41,25 +41,53 @@ export async function generateGeminiText({
     model
   )}:generateContent?key=${encodeURIComponent(apiKey)}`;
 
-  const res = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      systemInstruction: { parts: [{ text: system }] },
-      contents: [{ role: "user", parts: [{ text: prompt }] }],
-      generationConfig: {
-        temperature,
-        maxOutputTokens,
-        ...(json ? { responseMimeType: "application/json" } : {}),
-      },
-    }),
-    cache: "no-store",
+  const requestBody = JSON.stringify({
+    systemInstruction: { parts: [{ text: system }] },
+    contents: [{ role: "user", parts: [{ text: prompt }] }],
+    generationConfig: {
+      temperature,
+      maxOutputTokens,
+      ...(json ? { responseMimeType: "application/json" } : {}),
+    },
   });
 
-  if (!res.ok) {
-    const text = await res.text();
+  let res: Response | null = null;
+  let lastErrorText = "";
+  let lastFetchError: unknown = null;
+
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      res = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: requestBody,
+        cache: "no-store",
+      });
+    } catch (error) {
+      lastFetchError = error;
+      if (attempt === 2) {
+        throw new Error(`Gemini request failed: ${sanitizeProviderError(String(error))}`);
+      }
+
+      await wait(700 * (attempt + 1));
+      continue;
+    }
+
+    if (res.ok) break;
+
+    lastErrorText = await res.text();
+    if (!isRetryableStatus(res.status) || attempt === 2) {
+      throw new Error(
+        `Gemini request failed with status ${res.status}: ${sanitizeProviderError(lastErrorText)}`
+      );
+    }
+
+    await wait(700 * (attempt + 1));
+  }
+
+  if (!res || !res.ok) {
     throw new Error(
-      `Gemini request failed with status ${res.status}: ${sanitizeProviderError(text)}`
+      `Gemini request failed: ${sanitizeProviderError(lastErrorText || String(lastFetchError ?? "No response"))}`
     );
   }
 
@@ -75,6 +103,14 @@ export async function generateGeminiText({
   }
 
   return text;
+}
+
+function isRetryableStatus(status: number) {
+  return status === 429 || status === 500 || status === 502 || status === 503 || status === 504;
+}
+
+function wait(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 export function parseJsonObject<T>(text: string): T {

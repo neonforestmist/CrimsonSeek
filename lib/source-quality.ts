@@ -13,6 +13,7 @@ export interface SourceQuality {
 const PRIMARY_HOST_PATTERNS = [
   /\.gov$/,
   /\.edu$/,
+  /(^|\.)gov\.uk$/,
   /(^|\.)apple\.com$/,
   /(^|\.)anthropic\.com$/,
   /(^|\.)android\.com$/,
@@ -39,10 +40,13 @@ const RESEARCH_HOST_PATTERNS = [
   /(^|\.)ilo\.org$/,
   /(^|\.)jamanetwork\.com$/,
   /(^|\.)lmarena\.ai$/,
+  /(^|\.)livebench\.ai$/,
   /(^|\.)mckinsey\.com$/,
+  /(^|\.)metr\.org$/,
   /(^|\.)nber\.org$/,
   /(^|\.)oecd\.org$/,
   /(^|\.)pewresearch\.org$/,
+  /(^|\.)swebench\.com$/,
   /(^|\.)unesco\.org$/,
   /(^|\.)weforum\.org$/,
 ];
@@ -58,10 +62,12 @@ const EDITORIAL_HOST_PATTERNS = [
   /(^|\.)educationweek\.org$/,
   /(^|\.)ifixit\.com$/,
   /(^|\.)businessinsider\.com$/,
+  /(^|\.)consumerreports\.org$/,
   /(^|\.)macrumors\.com$/,
   /(^|\.)pcmag\.com$/,
+  /(^|\.)rtings\.com$/,
   /(^|\.)techcrunch\.com$/,
-  /(^|\.)ars-technica\.com$/,
+  /(^|\.)arstechnica\.com$/,
   /(^|\.)tomshardware\.com$/,
   /(^|\.)windowscentral\.com$/,
 ];
@@ -71,6 +77,8 @@ const COMMUNITY_HOST_PATTERNS = [
   /(^|\.)news\.ycombinator\.com$/,
   /(^|\.)hackernews\.com$/,
   /(^|\.)stackoverflow\.com$/,
+  /(^|\.)community\./,
+  /(^|\.)discussions\./,
   /(^|\.)forum\./,
   /(^|\.)forums\./,
   /(^|\.)discourse\./,
@@ -93,9 +101,13 @@ const SEO_PATTERNS = [
   /\bultimate guide\b/,
   /\bbuying guide\b/,
   /\bcomplete guide\b/,
+  /\bcomplete comparison\b/,
   /\bwhat you need to know\b/,
   /\bshould you buy\b/,
+  /\bwhich\s+\w+\s+is\s+better\b/,
+  /\bbest\s+\w+\s+guide\b/,
   /\bbest deals\b/,
+  /\bdeal alert\b/,
   /\baffiliate\b/,
   /\bcoupon\b/,
   /\bshopping\b/,
@@ -104,7 +116,17 @@ const SEO_PATTERNS = [
 
 export function assessSourceQuality(source: LinkupSource): SourceQuality {
   const host = hostnameOf(source.url).toLowerCase();
+  const urlText = source.url.toLowerCase();
   const text = `${source.name} ${source.snippet ?? ""}`.toLowerCase();
+
+  if (/\/sponsored\//.test(urlText) || /[?&][^=]*=([^&]*sponsored[^&]*)/i.test(urlText)) {
+    return {
+      tier: "caution",
+      label: "Caution",
+      role: "Sponsored or paid-content page",
+      reason: "Not treated as a high-confidence source for adversarial evidence.",
+    };
+  }
 
   if (isSeoRisk(host, text)) {
     return {
@@ -123,6 +145,18 @@ export function assessSourceQuality(source: LinkupSource): SourceQuality {
       role: "Personal or low-confidence source",
       reason:
         "Useful as a public reaction, but weaker than primary records, benchmarks, reputable reporting, or firsthand community evidence.",
+    };
+  }
+
+  if (
+    COMMUNITY_HOST_PATTERNS.some((pattern) => pattern.test(host)) ||
+    /\/(?:forum|forums|discussion|discussions)(?:\/|$)/.test(urlText)
+  ) {
+    return {
+      tier: "context",
+      label: "Context",
+      role: "Community or firsthand discussion",
+      reason: "Useful for public reaction, complaints, praise, and recurring lived experience.",
     };
   }
 
@@ -150,15 +184,6 @@ export function assessSourceQuality(source: LinkupSource): SourceQuality {
       label: "Strong",
       role: "Editorial source",
       reason: "Useful for reported context, reviews, hands-on testing, and cited analysis.",
-    };
-  }
-
-  if (COMMUNITY_HOST_PATTERNS.some((pattern) => pattern.test(host))) {
-    return {
-      tier: "context",
-      label: "Context",
-      role: "Community or firsthand discussion",
-      reason: "Useful for public reaction, complaints, praise, and recurring lived experience.",
     };
   }
 
