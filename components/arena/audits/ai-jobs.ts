@@ -3,65 +3,57 @@ import type { DebateAudit } from "@/components/arena/audit-types";
 export const aiJobsAudit: DebateAudit = {
   "arenaId": "ai-jobs",
   "userPosition": "AI will create more good jobs than it destroys.",
-  "crimsonPosition": "CrimsonSeek argues the strongest current countercase in the AI in Jobs debate, with source material woven directly into the reply.",
-  "verdict": "This saved AI jobs audit keeps the countercase cautious and readable: productivity may rise, but job quality and job distribution are still unsettled.",
+  "crimsonPosition": "CrimsonSeek argues the worker-risk countercase with recent labor, adoption, displacement, and augmentation evidence.",
+  "verdict": "This saved AI jobs audit keeps the optimism in view while pressuring the transition costs workers actually face.",
   "searchMoments": [
     {
-      "id": "job-growth-uncertainty",
-      "label": "Job growth uncertainty",
-      "query": "AI jobs counter-evidence on productivity, employment effects, automation exposure, and labor market uncertainty",
-      "summary": "Fresh Linkup check using labor research and official statistics to test whether productivity gains already prove net job creation.",
+      "id": "ai-jobs-transition-cost",
+      "label": "Transition cost",
+      "query": "AI jobs 2025 2026 labor market productivity displacement task exposure adoption BLS WEF Federal Reserve",
+      "summary": "Checks whether productivity and new AI roles prove that workers will quickly land in better jobs.",
       "evidence": [
         {
-          "title": "AI growth acceleration versus distributional fairness | Brookings",
-          "url": "https://www.brookings.edu/articles/ai-growth-acceleration-versus-distributional-fairness/",
-          "snippet": "Brookings cites tracker evidence that current measures of AI exposure, automation, and augmentation show no systematic relation to employment or unemployment changes.",
+          "title": "The Future of Jobs Report 2025",
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/",
+          "snippet": "WEF projects both job creation and job displacement by 2030, including 170 million jobs created and 92 million displaced, for a net gain of 78 million jobs.",
           "sourceQuality": "Research or institutional source"
         },
         {
-          "title": "Productivity and Artificial Intelligence : U.S. Bureau of Labor Statistics",
-          "url": "https://www.bls.gov/productivity/articles-and-research/ai-and-productivity/home.htm",
-          "snippet": "BLS says AI has captured attention because researchers are still trying to track its development and its effect on workers and the economy.",
+          "title": "AI impacts in BLS employment projections",
+          "url": "https://www.bls.gov/opub/ted/2025/ai-impacts-in-bls-employment-projections.htm",
+          "snippet": "BLS says AI is expected to primarily affect occupations whose core tasks can be most easily replicated by generative AI in its current form.",
           "sourceQuality": "Primary or official source"
-        }
-      ]
-    },
-    {
-      "id": "task-substitution-risk",
-      "label": "Task substitution risk",
-      "query": "AI jobs counter-evidence on task substitution, worker mobility, enterprise gains, and deskilling risk",
-      "summary": "Fresh Linkup check using workforce research on whether AI mostly augments workers or starts replacing work tasks.",
-      "evidence": [
-        {
-          "title": "AI, strategy, and the future of work: Oxford economist Jean-Paul Carvalho",
-          "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/ai-strategy-and-the-future-of-work-oxford-economist-jean-paul-carvalho",
-          "snippet": "McKinsey's interview says AI agents are becoming increasingly substitutable for human labor, with evidence of full substitutability in some tasks.",
-          "sourceQuality": "Research or institutional source"
         },
         {
-          "title": "The rise of the human-AI workforce | McKinsey",
-          "url": "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-rise-of-the-human-ai-workforce",
-          "snippet": "McKinsey says most companies are not yet seeing meaningful enterprise-level gains from AI, even though the potential value is large.",
+          "title": "The State of Generative AI Adoption in 2025",
+          "url": "https://www.stlouisfed.org/on-the-economy/2025/nov/state-generative-ai-adoption-2025",
+          "snippet": "The St. Louis Fed finds work adoption rising, but generative AI accounted for 5.7% of work hours in August 2025 and reported time savings equal to 1.6% of all work hours.",
           "sourceQuality": "Research or institutional source"
         }
       ]
     },
     {
-      "id": "retraining-gap",
-      "label": "Retraining gap",
-      "query": "AI jobs counter-evidence on retraining capacity, future skills, measurement gaps, and labor transition speed",
-      "summary": "Fresh Linkup check using skills and economic-measurement sources to test whether retraining can absorb AI disruption fast enough.",
+      "id": "ai-jobs-augmentation-limits",
+      "label": "Augmentation limits",
+      "query": "AI jobs 2025 augmentation replacement early career workers freelancers automation labor demand Stanford Brookings WEF",
+      "summary": "Checks whether AI exposure is mostly augmentation or whether some workers are already seeing substitution pressure.",
       "evidence": [
         {
-          "title": "What are the most valuable skills for the jobs of the future? | World Economic Forum",
-          "url": "https://www.weforum.org/videos/future-of-jobs-valuable-skills/",
-          "snippet": "The World Economic Forum says AI and big data, leadership, and social influence will be high-demand skills over the next five years.",
+          "title": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence",
+          "url": "https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/",
+          "snippet": "Stanford's ADP-based study finds early-career workers ages 22-25 in AI-exposed occupations experienced 16% relative employment declines, with declines concentrated where AI automates rather than augments labor.",
           "sourceQuality": "Research or institutional source"
         },
         {
-          "title": "AI & Economic Measurement | NBER",
-          "url": "https://www.nber.org/programs-projects/projects-and-centers/8951-ai-economic-measurement",
-          "snippet": "NBER's AI economic measurement project includes work on how traditional labor market and productivity measures may need changes to capture AI's effects.",
+          "title": "Is generative AI a job killer? Evidence from the freelance market",
+          "url": "https://www.brookings.edu/articles/is-generative-ai-a-job-killer-evidence-from-the-freelance-market/",
+          "snippet": "Brookings reports that freelancers in more AI-exposed occupations saw a 2% decline in contracts and a 5% drop in earnings after new AI software arrived.",
+          "sourceQuality": "Research or institutional source"
+        },
+        {
+          "title": "Skills outlook | The Future of Jobs Report 2025",
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/3-skills-outlook/",
+          "snippet": "WEF's skills analysis finds no assessed skill had very high current substitution capacity from GenAI, while many skills still face moderate or rising substitution pressure.",
           "sourceQuality": "Research or institutional source"
         }
       ]
@@ -71,35 +63,24 @@ export const aiJobsAudit: DebateAudit = {
     {
       "id": "user-1",
       "role": "user",
-      "content": "AI will create more good jobs than it destroys because it raises productivity and creates new roles around automation."
+      "content": "AI is going to create more good jobs than it destroys. Every major technology scares people at first, but once companies learn how to use it, productivity rises, new roles appear, and people move into better work instead of wasting time on repetitive tasks."
     },
     {
       "id": "assistant-1",
       "role": "assistant",
-      "searchMomentId": "job-growth-uncertainty",
-      "content": "Productivity can create jobs, but it does not guarantee good jobs for the same workers. Brookings points out that current AI exposure measures do not yet line up neatly with employment changes {{current measures of AI exposure, automation, and augmentation show no systematic relation to employment or unemployment changes}}(1). BLS is still studying how to track AI's effects on workers and the economy {{researchers are still trying to track AI's effect on workers and the economy}}(2). The honest counter is uncertainty, not automatic job growth."
+      "searchMomentId": "ai-jobs-transition-cost",
+      "content": "Maybe, but that skips the messy middle. Even the optimistic jobs outlook still includes serious churn: {{WEF still expects 92 million jobs displaced by 2030}}(1). BLS also frames the near-term risk around tasks GenAI can actually copy, not a clean upgrade path for every worker: {{GenAI most affects tasks it can replicate}}(2). And adoption is broad but still shallow enough that the better-jobs story is not proven yet: {{AI made up 5.7 percent of work hours}}(3)."
     },
     {
       "id": "user-2",
       "role": "user",
-      "content": "Exposure to AI does not mean replacement. It means workers can offload boring tasks and move up the value chain."
+      "content": "Exposure still does not mean replacement, though. If AI can draft an email, summarize a file, or help a junior analyst write code, that sounds like augmentation. People can spend less time on grind work and more time doing judgment, relationships, and creative problem-solving."
     },
     {
       "id": "assistant-2",
       "role": "assistant",
-      "searchMomentId": "task-substitution-risk",
-      "content": "That can happen, but it is not the only path. Some AI agents are becoming substitutes for human labor in specific tasks {{AI agents are becoming increasingly substitutable for human labor}}(1), and many companies still are not seeing meaningful gains from AI at the enterprise level {{most companies are not yet seeing meaningful enterprise-level gains from AI}}(2). If the gains are weak, managers may cut tasks before they create better roles."
-    },
-    {
-      "id": "user-3",
-      "role": "user",
-      "content": "Companies and schools can retrain people, so the upside should outweigh the disruption."
-    },
-    {
-      "id": "assistant-3",
-      "role": "assistant",
-      "searchMomentId": "retraining-gap",
-      "content": "Retraining helps, but it has to move as fast as the labor market changes. The skills list is shifting toward AI, data, leadership, and social influence {{AI and big data, leadership, and social influence will be high-demand skills over the next five years}}(1). At the same time, economists are still updating the basic measurements needed to see AI's labor effects clearly {{labor market and productivity measures may need changes to capture AI's effects}}(2). That is a shaky base for promising the upside will win."
+      "searchMomentId": "ai-jobs-augmentation-limits",
+      "content": "That is the best version of the AI jobs case, and it is real in some work. The problem is that help and replacement depend on the task. Stanford found the pressure landing hardest on younger workers in exposed roles: {{AI-exposed early-career workers saw 16 percent employment declines}}(1). Brookings found exposed freelancers losing work and pay: {{AI-exposed freelancers saw fewer contracts and lower earnings}}(2). So the fair counter is not that AI replaces everyone. It is that augmentation only protects workers when companies design the job around the person: {{no skill had very high GenAI substitution capacity}}(3)."
     }
   ]
 };

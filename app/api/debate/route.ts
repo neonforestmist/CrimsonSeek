@@ -297,8 +297,9 @@ const DEBATE_SYSTEM = [
   "Adapt to the user's tone and sophistication as the conversation develops. If they are casual, be casual. If they are technical, meet the technical level. If they are terse, stay tight.",
   "The user has taken a position. Your job is to argue the strongest opposing position.",
   "Your job is not to summarize search results. Your job is to stress-test the user's claim and make the countercase feel hard to ignore.",
-  "Use only the provided high-confidence evidence. Gemini must choose and write the inline citations itself by weaving source material directly into the sentence with this exact internal markup: {{specific source material}}(1) or {{specific source material}}(2).",
-  "The words inside {{ }} must be a concise fact, quote fragment, metric, policy detail, benchmark result, or source-backed detail from the provided source material, not a generic label.",
+  "Use only the provided high-confidence evidence. Gemini must choose and write the inline citations itself by weaving short source material directly into the sentence with this exact internal markup: {{specific source material}}(1) or {{specific source material}}(2).",
+  "The words inside {{ }} must be a sentence-native citation anchor: usually 3-14 words, under 90 characters, and a concise fact, quote fragment, metric, policy detail, benchmark result, or source-backed detail from the provided source material.",
+  "The highlighted source material must read as part of your sentence. Do not paste a whole source sentence, title-like phrase, or detached snippet just because it came from the source.",
   "Never write bare citation markers like [1], [2], or a dangling (1). Never use a citation unless the cited source directly supports that exact sentence.",
   "Never put ellipses in cited source material. If a source snippet contains ellipses or an incomplete fragment, rewrite the usable fact cleanly in your own words before citing it.",
   "Do not use page titles, URLs, domains, publication names, or source labels as cited material. Cite the claim the source supports.",
@@ -386,7 +387,7 @@ function buildPlanPrompt({
     "Planning rules:",
     "- sourceBudget 0 means do not call Linkup. Use it for junk, greetings, meta messages, or claims too vague to search.",
     "- Use sourceBudget 2 for short claims that need evidence, 3 for normal claims, 4 or 5 only when the user makes a detailed or high-stakes argument.",
-    "- targetWords should roughly match the user's effort: 45-90 for short one-line claims, 100-170 for normal claims, 200-360 for long developed claims.",
+    "- targetWords should roughly match the user's effort: 45-80 for short one-line claims, 90-145 for normal claims, 180-300 for long developed claims.",
     "- strict_recent means search recent news/current pages first, then broaden only if needed. Use it for model/product/tool/policy/current-market claims.",
     "- recent_first means prefer the last year or two but allow older strong sources if the topic is not purely current.",
     "- evergreen means older canonical sources are fine.",
@@ -549,7 +550,8 @@ function buildGeminiPrompt({
     sources || "No high-confidence source list available. If you cannot cite high-confidence evidence, say that clearly and make a cautious counterargument without invented citations.",
     "",
     "Citation style:",
-    "When you use a source, weave the source material into the body text as `{{specific source material}}(number)`. Good: `{{Gartner attributes expected GenAI abandonment to poor data quality, risk controls, cost, and unclear business value}}(2)`. Bad: `Gartner says this (2)`.",
+    "When you use a source, weave a short source-backed anchor into the body text as `{{specific source material}}(number)`. Good: `{{20 hours and 41 minutes in battery testing}}(1)` or `{{calls, texts, and notifications from Android or iPhone}}(2)`. Bad: `Gartner says this (2)` or a pasted full source sentence.",
+    "The source material inside `{{ }}` should usually be 3-14 words and must stay under 90 characters. It should feel like a natural highlighted clause inside your sentence, not a citation dump.",
     "Every citation must be written by you from the evidence list. Do not write bare `[1]`, `[2]`, `(1)`, or bracket-only citations.",
     "If evidence is provided, cite only source-backed factual claims. If a sentence is analysis or rhetoric, leave it uncited. If the source does not directly support the sentence, rewrite the sentence or remove the citation.",
     "Do not put ellipses (`...` or `…`) inside the reply or the cited material. If the source material is choppy, paraphrase the complete supported fact cleanly.",
@@ -655,6 +657,9 @@ function buildEvidence(
     const sourceMaterial = cleanSourceSnippet(source.snippet ?? "");
     if (!sourceMaterial) continue;
     if (shouldFilterStaleModelSource(arenaId, plan) && isStaleModelSource(source, sourceMaterial)) {
+      continue;
+    }
+    if (!isTopicallyRelevantSource(arenaId, plan, source, sourceMaterial)) {
       continue;
     }
 
@@ -809,7 +814,7 @@ function sourceMaterialLine(evidence: DebateEvidence[]) {
 }
 
 function sourceMaterialExcerpt(value: string) {
-  return firstUsefulSentence(cleanCitationMaterial(value));
+  return compactCitationAnchor(firstUsefulSentence(cleanCitationMaterial(value)));
 }
 
 function debateDepth(
@@ -885,7 +890,9 @@ function citationLooksRelevant(material: string, item: DebateEvidence) {
   const materialText = material.toLowerCase();
   const numbers = materialText.match(/\b\d+(?:\.\d+)?%?\b/g) ?? [];
 
-  if (numbers.some((number) => sourceText.includes(number))) return true;
+  if (numbers.length) {
+    return numbers.every((number) => sourceText.includes(number));
+  }
 
   const tokens = keyTokens(materialText);
   if (!tokens.length) return false;
@@ -894,13 +901,66 @@ function citationLooksRelevant(material: string, item: DebateEvidence) {
   return overlap >= Math.min(2, tokens.length);
 }
 
+const ARENA_REQUIRED_TOPIC_PATTERNS: Record<string, RegExp[]> = {
+  "chatgpt-claude": [
+    /\b(chatgpt|openai|claude|anthropic|llm|model|coding|code|benchmark|context|connector|workspace|slack|github)\b/i,
+  ],
+  "mac-windows": [
+    /\b(mac|macos|apple silicon|windows|pc|laptop|surface|thinkpad|xps|battery|gaming|steam|phone link|passkey|driver|repair)\b/i,
+  ],
+  "iphone-android": [
+    /\b(iphone|ios|android|pixel|galaxy|samsung|phone|smartphone|app store|play protect|camera|repair|update|security|privacy)\b/i,
+  ],
+  "ai-jobs": [
+    /(?=.*\b(ai|artificial intelligence|generative ai|genai|automation)\b)(?=.*\b(jobs?|labor|employment|workers?|wages?|productivity|occupation|displacement|freelance)\b)/i,
+  ],
+  "phones-school": [
+    /\b(phone|phones|cellphone|cell phone|smartphone|mobile device|device policy|school phone|school cellphone|bell-to-bell|pouch|cyberbullying)\b/i,
+  ],
+  "ai-investment": [
+    /(?=.*\b(ai|artificial intelligence|generative ai|genai)\b)(?=.*\b(roi|return|productivity|enterprise|implementation|infrastructure|governance|adoption|budget|spending|pilot|investment|value)\b)/i,
+  ],
+};
+
+function isTopicallyRelevantSource(
+  arenaId: string,
+  plan: z.infer<typeof GeminiPlanSchema>,
+  source: LinkupSource,
+  sourceMaterial: string
+) {
+  const patterns = ARENA_REQUIRED_TOPIC_PATTERNS[arenaId];
+  if (!patterns?.length) return true;
+
+  void plan;
+  const text = `${source.name} ${source.url} ${sourceMaterial}`;
+  return patterns.some((pattern) => pattern.test(text));
+}
+
 function citationMaterialLooksClean(material: string) {
+  if (material.length > 90) return false;
+  const words = wordCount(material);
+  if (words < 3 || words > 14) return false;
   if (/\u2026|\.{3,}/.test(material)) return false;
   if (/\b(?:https?:\/\/|www\.|[a-z0-9-]+\.(?:com|org|edu|gov|gov\.uk|ai|io|net|co)\b)/i.test(material)) {
     return false;
   }
   if (/\b(source|article|report|page|blog post|website)\s+\d*$/i.test(material)) return false;
   return true;
+}
+
+function compactCitationAnchor(value: string) {
+  const clean = cleanCitationMaterial(value)
+    .replace(/^(according to|the report says|the source says|the article says)\s+/i, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  const words = clean.split(/\s+/).filter(Boolean);
+
+  if (clean.length <= 90 && words.length <= 14) return clean;
+
+  const clipped = words.slice(0, 14).join(" ");
+  return clipped.length <= 90
+    ? clipped.replace(/[,;:]$/, "")
+    : clipped.slice(0, 90).replace(/\s+\S*$/, "").replace(/[,;:]$/, "");
 }
 
 function keyTokens(value: string) {
@@ -997,10 +1057,10 @@ function wordCount(value: string) {
 
 function targetWordsForClaim(claim: string) {
   const words = wordCount(claim);
-  if (words < 10) return 55;
-  if (words < 25) return 85;
-  if (words < 70) return 150;
-  return 280;
+  if (words < 10) return 50;
+  if (words < 25) return 75;
+  if (words < 70) return 125;
+  return 240;
 }
 
 function targetParagraphsForWords(words: number) {

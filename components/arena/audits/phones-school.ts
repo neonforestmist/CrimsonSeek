@@ -3,66 +3,58 @@ import type { DebateAudit } from "@/components/arena/audit-types";
 export const phonesSchoolAudit: DebateAudit = {
   "arenaId": "phones-school",
   "userPosition": "Schools should ban phones during the school day.",
-  "crimsonPosition": "CrimsonSeek argues the strongest current countercase in the Phones in School debate, with source material woven directly into the reply.",
-  "verdict": "This saved Phones in School audit argues for a stricter-but-not-blanket approach, using readable counterpoints and clear inline evidence.",
+  "crimsonPosition": "CrimsonSeek argues for strict phone control during learning time without pretending a blanket day-long ban solves attention, mental health, safety, and access by itself.",
+  "verdict": "This saved audit treats school phone bans as a real tool with real tradeoffs: clear restrictions, documented exceptions, and evidence-aware expectations.",
   "searchMoments": [
     {
-      "id": "ban-vs-skills",
-      "label": "Ban vs skills",
-      "query": "Phones in school counter-evidence on full-day bans, student support, digital skills, and implementation challenges",
-      "summary": "Fresh Linkup check using teen survey data and government consultation material on phone restrictions, digital skills, and policy pilots.",
+      "id": "focus-without-overreach",
+      "label": "Focus without overreach",
+      "query": "2026 school phone bans smartphone use during school class bans full day bans test scores",
+      "summary": "Current source trail checks whether distraction justifies a full-day ban or a tighter instruction-first policy.",
       "evidence": [
         {
-          "title": "Internet & Technology - Research and data from Pew Research Center",
-          "url": "https://www.pewresearch.org/topic/internet-technology/",
-          "snippet": "Pew reports that about one in five teens support banning cellphones during the entire school day, including lunch and time between classes.",
+          "title": "Smartphone Use During School Hours by US Youth",
+          "url": "https://jamanetwork.com/journals/jama/article-abstract/2843506",
+          "snippet": "JAMA reports that U.S. adolescents spend more than one hour per day on smartphones during school hours, with social media the largest use category.",
           "sourceQuality": "Research or institutional source"
         },
         {
-          "title": "Growing up in the online world: a national conversation - GOV.UK",
-          "url": "https://www.gov.uk/government/consultations/growing-up-in-the-online-world-a-national-consultation/growing-up-in-the-online-world-a-national-conversation",
-          "snippet": "The UK consultation is testing social media bans, curfews, and daily limits to learn about implementation challenges and potential impact.",
-          "sourceQuality": "Primary or official source"
+          "title": "How US teens view school cellphone bans",
+          "url": "https://www.pewresearch.org/short-reads/2026/01/13/about-4-in-10-teens-support-cellphone-bans-in-classrooms-fewer-back-all-day-restrictions/",
+          "snippet": "Pew's fall 2025 teen survey found 41% support classroom cellphone bans, while only 17% support banning phones for the entire school day.",
+          "sourceQuality": "Research or institutional source"
+        },
+        {
+          "title": "National study of school cell phone bans shows benefits are not immediate",
+          "url": "https://ed.stanford.edu/news/national-study-school-cell-phone-bans-shows-benefits-are-not-immediate",
+          "snippet": "Stanford's summary of the NBER pouch study says strict pouch policies reduced phone use, but did not produce major short-term gains in test scores, attendance, classroom attention, or perceived cyberbullying.",
+          "sourceQuality": "Research or institutional source"
         }
       ]
     },
     {
-      "id": "restriction-not-chaos",
-      "label": "Restriction, not chaos",
-      "query": "Phones in school counter-evidence on simple rules, exceptions, existing restrictions, and teacher workload",
-      "summary": "Fresh Linkup check on whether schools need an all-day ban or clearer restriction policies with room for legitimate exceptions.",
+      "id": "exceptions-and-enforcement",
+      "label": "Access and enforcement",
+      "query": "2025 2026 school phone ban exceptions emergency IEP translation medical enforcement digital literacy",
+      "summary": "Current source trail checks safety, accessibility, and implementation tradeoffs around phone-free school days.",
       "evidence": [
         {
-          "title": "The Children's Wellbeing and School Act passes into law | Children's Commissioner for England",
-          "url": "https://www.childrenscommissioner.gov.uk/news-and-blogs/the-childrens-wellbeing-and-school-act-passes-into-law/",
-          "snippet": "The Children's Commissioner says the overwhelming majority of schools were already restricting device use before the new school smartphone ban.",
+          "title": "Cell Phone and Electronic Device Policy",
+          "url": "https://www.schools.nyc.gov/DevicePolicy",
+          "snippet": "NYC's 2025-26 phone-free policy stores devices bell-to-bell while allowing exceptions for medical monitoring, translation, IEP/504 needs, caregiving, and individual emergencies.",
           "sourceQuality": "Primary or official source"
         },
         {
-          "title": "Growing up in the online world: a national conversation - GOV.UK",
-          "url": "https://www.gov.uk/government/consultations/growing-up-in-the-online-world-a-national-consultation/growing-up-in-the-online-world-a-national-conversation",
-          "snippet": "The UK consultation says pilots will test different interventions and show the implementation challenges of bans, curfews, and limits.",
-          "sourceQuality": "Primary or official source"
-        }
-      ]
-    },
-    {
-      "id": "attention-and-self-control",
-      "label": "Attention and self-control",
-      "query": "Phones in school counter-evidence on classroom attention, digital self-control, exam cheating, and healthy technology habits",
-      "summary": "Fresh Linkup check using exam malpractice data and digital-skills policy material to test whether bans alone teach responsible behavior.",
-      "evidence": [
-        {
-          "title": "Thousands of students risk their qualifications by taking phones into exam hall as GCSE and A Level exams begin - GOV.UK",
-          "url": "https://www.gov.uk/government/news/thousands-of-students-risk-their-qualifications-by-taking-phones-into-exam-hall-as-gcse-and-a-level-exams-begin",
-          "snippet": "Ofqual warned that 2,225 cases of student malpractice involved mobile phones or smart devices in the previous summer exam series.",
-          "sourceQuality": "Primary or official source"
+          "title": "Curbing Cell Phone Use in Classrooms",
+          "url": "https://www.nasbe.org/curbing-cell-phone-use-in-classrooms/",
+          "snippet": "NASBE says bans alone will not address complicated online harms or teach appropriate technology use, and emphasizes stakeholder-informed policy design.",
+          "sourceQuality": "Research or institutional source"
         },
         {
-          "title": "Growing up in the online world: a national conversation - GOV.UK",
-          "url": "https://www.gov.uk/government/consultations/growing-up-in-the-online-world-a-national-consultation/growing-up-in-the-online-world-a-national-conversation",
-          "snippet": "The UK consultation says children need digital skills for social life, school, and future jobs that may not yet exist.",
-          "sourceQuality": "Primary or official source"
+          "title": "Survey: Parents and teens support school cellphone bans",
+          "url": "https://www.brookings.edu/articles/survey-parents-and-teens-support-school-cellphone-bans-and-most-dont-perceive-major-downsides/",
+          "snippet": "Brookings reports that restrictions reduce phone use but do not eliminate it, with enforcement leakage still present under school policies.",
+          "sourceQuality": "Research or institutional source"
         }
       ]
     }
@@ -71,35 +63,24 @@ export const phonesSchoolAudit: DebateAudit = {
     {
       "id": "user-1",
       "role": "user",
-      "content": "Schools should ban phones during the school day because students cannot focus with a social slot machine nearby."
+      "content": "Schools should ban phones during the school day, not just during tests or lectures. The apps are engineered to win attention, and teenagers are being asked to out-discipline companies with billions of dollars. Even a phone in a backpack pulls people out of class, and lunch group chats turn small drama into everyone's problem before fifth period."
     },
     {
       "id": "assistant-1",
       "role": "assistant",
-      "searchMomentId": "ban-vs-skills",
-      "content": "The focus problem is real, but a full-day ban may skip the harder lesson. Only about one in five teens support banning phones for the entire school day {{about one in five teens support banning cellphones during the entire school day}}(1), and governments are still testing bans, curfews, and limits to see what actually works {{pilots are testing social media bans, curfews, and daily limits to learn about implementation challenges and impact}}(2). Class restrictions make sense; pretending phones disappear does not."
+      "searchMomentId": "focus-without-overreach",
+      "content": "The distraction problem is real, so I would not wave this away. The sharper answer is phones away during learning, not pretending a full-day ban fixes school by itself. Recent JAMA research makes the attention case concrete: {{students spend real school time on phones}}(1). But Pew found teens much more open to classroom bans than all-day bans: {{classroom limits have more legitimacy with students}}(2). And the national pouch study found lower phone use without automatic academic gains: {{phone-free systems are not an instant academic cure}}(3). Protect class time hard. Judge the rest by evidence."
     },
     {
       "id": "user-2",
       "role": "user",
-      "content": "Exceptions make bans messy, but teachers need simple rules and a real break from notifications and group chats."
+      "content": "I get that some students need a device for diabetes apps, translation, pickups, or real family emergencies. But once schools create a bunch of exceptions, the rule becomes hard for teachers to enforce. I would rather have one clean bell-to-bell rule, with the office handling emergencies, than another policy that only works for students who already follow rules."
     },
     {
       "id": "assistant-2",
       "role": "assistant",
-      "searchMomentId": "restriction-not-chaos",
-      "content": "Teachers do need simple rules. The counter is that simple does not have to mean total. Most schools were already restricting device use before national bans arrived {{the overwhelming majority of schools were already restricting device use}}(1), and policy pilots are still studying the implementation problems around bans, curfews, and limits {{pilots will show the implementation challenges of bans, curfews, and limits}}(2). A clear class-time rule can protect attention without making every health, access, or travel case a discipline fight."
-    },
-    {
-      "id": "user-3",
-      "role": "user",
-      "content": "Digital self-control can wait. Classrooms should protect attention first."
-    },
-    {
-      "id": "assistant-3",
-      "role": "assistant",
-      "searchMomentId": "attention-and-self-control",
-      "content": "Attention should come first during lessons, but self-control cannot wait forever. Exam halls already have strict rules, yet thousands of phone and smart-device malpractice cases still happened {{2,225 cases of student malpractice involved mobile phones or smart devices}}(1). Schools also have to prepare students for a future where digital skills matter {{children need digital skills for social life, school, and future jobs}}(2). So the stronger policy is tight classroom control plus coached responsibility."
+      "searchMomentId": "exceptions-and-enforcement",
+      "content": "A clean rule helps teachers. It just has to be clean about use, not blind about need. NYC's current model is useful because it is bell-to-bell and still protects medical monitoring, translation, IEP and 504 needs, caregiving, and emergencies: {{strict phone-free days still need protected access paths}}(1). NASBE makes the bigger point: {{removing the device is not teaching the habit}}(2). Brookings also found restrictions reduce use without making it disappear: {{strong rules still leave enforcement leakage}}(3). So yes: strong storage, no desk-by-desk bargaining, and real exceptions written down before the conflict starts."
     }
   ]
 };

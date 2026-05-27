@@ -3,66 +3,58 @@ import type { DebateAudit } from "@/components/arena/audit-types";
 export const chatgptClaudeAudit: DebateAudit = {
   "arenaId": "chatgpt-claude",
   "userPosition": "ChatGPT is better than Claude for serious work.",
-  "crimsonPosition": "CrimsonSeek argues the strongest current countercase in the ChatGPT vs Claude debate, with source material woven directly into the reply.",
-  "verdict": "This saved ChatGPT vs Claude audit uses current source trails, concise counterarguments, and inline source-backed citation material instead of detached link lists.",
+  "crimsonPosition": "CrimsonSeek argues the current Claude countercase: ChatGPT may be broader, but Claude is no longer thin on serious work, coding, research, or team context.",
+  "verdict": "This saved ChatGPT vs Claude audit uses current official source trails and short citation anchors that synthesize the evidence inside normal sentences.",
   "searchMoments": [
     {
-      "id": "claude-workflow-depth",
-      "label": "Claude workflow depth",
-      "query": "ChatGPT vs Claude counter-evidence on serious work ecosystem, reliability, Claude Code, and workplace apps",
-      "summary": "Fresh Linkup check using TechCrunch reporting on Claude Code adoption and Claude's workplace app integrations.",
+      "id": "claude-work-stack",
+      "label": "Claude work stack",
+      "query": "current Claude countercase against ChatGPT broader product ecosystem serious work Claude Code Claude Slack Sonnet 4.6",
+      "summary": "Current official sources showing Claude's model, coding, business-plan, and Slack workflow depth.",
       "evidence": [
         {
-          "title": "Claude Code rolls out a voice mode capability | TechCrunch",
-          "url": "https://techcrunch.com/2026/03/03/claude-code-rolls-out-a-voice-mode-capability/",
-          "snippet": "Anthropic is bringing Voice Mode to Claude Code, its AI coding assistant for developers, with a gradual release and a broader rollout planned.",
-          "sourceQuality": "Editorial source"
+          "title": "Introducing Claude Sonnet 4.6",
+          "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+          "snippet": "Claude Sonnet 4.6 is the default model in Claude.ai and Claude Cowork, with file creation, connectors, skills, and compaction included in Claude's current product surface.",
+          "sourceQuality": "Official Anthropic source"
         },
         {
-          "title": "Anthropic launches interactive Claude apps, including Slack and other workplace tools | TechCrunch",
-          "url": "https://techcrunch.com/2026/01/26/anthropic-launches-interactive-claude-apps-including-slack-and-other-workplace-tools/",
-          "snippet": "Claude users can call up workplace apps inside the chatbot interface, including Slack, Canva, Figma, Box, and Clay.",
-          "sourceQuality": "Editorial source"
+          "title": "Claude Code and new admin controls for business plans",
+          "url": "https://www.anthropic.com/news/claude-code-on-team-and-enterprise",
+          "snippet": "Team and Enterprise customers can upgrade to premium seats that include both Claude and Claude Code under one subscription.",
+          "sourceQuality": "Official Anthropic source"
+        },
+        {
+          "title": "Claude and Slack",
+          "url": "https://claude.com/blog/claude-and-slack",
+          "snippet": "Claude can connect to Slack and search channels, direct messages, and shared files for better responses and research.",
+          "sourceQuality": "Official Claude source"
         }
       ]
     },
     {
-      "id": "claude-tools-in-one-place",
-      "label": "Claude tools in one place",
-      "query": "ChatGPT vs Claude counter-evidence on coding, file work, search, and team workflows in Claude",
-      "summary": "Fresh Linkup check focused on whether Claude now covers the practical work surfaces the user says only ChatGPT has.",
+      "id": "claude-search-files-integrations",
+      "label": "Claude search and files",
+      "query": "current Claude countercase web search citations integrations GitHub Google Drive Gmail Calendar file creation connectors Sonnet 4.6",
+      "summary": "Current official sources showing Claude now covers web search, citations, integrations, file work, and long-context work surfaces.",
       "evidence": [
         {
-          "title": "Claude Code rolls out a voice mode capability | TechCrunch",
-          "url": "https://techcrunch.com/2026/03/03/claude-code-rolls-out-a-voice-mode-capability/",
-          "snippet": "Claude Code is Anthropic's coding assistant for developers, and Voice Mode is meant to make coding workflows more conversational and hands-free.",
-          "sourceQuality": "Editorial source"
+          "title": "Claude can now search the web",
+          "url": "https://claude.com/blog/web-search",
+          "snippet": "Web search is available globally on all Claude plans, and Claude provides direct citations when it uses web information.",
+          "sourceQuality": "Official Claude source"
         },
         {
-          "title": "Anthropic launches interactive Claude apps, including Slack and other workplace tools | TechCrunch",
-          "url": "https://techcrunch.com/2026/01/26/anthropic-launches-interactive-claude-apps-including-slack-and-other-workplace-tools/",
-          "snippet": "Anthropic's launch apps for Claude are mostly workplace tools, with Slack, Canva, Figma, Box, Clay, and a Salesforce implementation expected.",
-          "sourceQuality": "Editorial source"
-        }
-      ]
-    },
-    {
-      "id": "claude-enterprise-safety",
-      "label": "Claude enterprise safety",
-      "query": "ChatGPT vs Claude counter-evidence on enterprise standardization, safety, security work, and integrations",
-      "summary": "Fresh Linkup check using current reporting on Anthropic's safety principles, cybersecurity work, and workplace integration strategy.",
-      "evidence": [
-        {
-          "title": "Anthropic revises Claude's 'Constitution,' and hints at chatbot consciousness | TechCrunch",
-          "url": "https://techcrunch.com/2026/01/21/anthropic-revises-claudes-constitution-and-hints-at-chatbot-consciousness/",
-          "snippet": "Anthropic revised the set of principles used to guide Claude's behavior and describe the context in which the model should operate.",
-          "sourceQuality": "Editorial source"
+          "title": "Set up Claude integrations",
+          "url": "https://support.claude.com/en/articles/10168395-set-up-claude-integrations",
+          "snippet": "Claude integrations include GitHub, Google Drive, Gmail, and Google Calendar across Claude plans.",
+          "sourceQuality": "Official Claude Help Center"
         },
         {
-          "title": "Anthropic debuts preview of powerful new AI model Mythos in new cybersecurity initiative | TechCrunch",
-          "url": "https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/",
-          "snippet": "Anthropic's Project Glasswing involves 12 partner organizations using a frontier model for defensive security work and critical software security.",
-          "sourceQuality": "Editorial source"
+          "title": "Introducing Claude Sonnet 4.6",
+          "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+          "snippet": "Claude Sonnet 4.6 includes file creation, connectors, skills, compaction, stronger coding, computer use, long-context reasoning, and knowledge work.",
+          "sourceQuality": "Official Anthropic source"
         }
       ]
     }
@@ -71,35 +63,24 @@ export const chatgptClaudeAudit: DebateAudit = {
     {
       "id": "user-1",
       "role": "user",
-      "content": "ChatGPT is better than Claude for serious work because it has the broader product ecosystem, tools, and everyday reliability."
+      "content": "ChatGPT is still better for serious work. I need one place for writing, coding, research, files, and daily team stuff, and Claude usually feels like the better writer but the thinner product."
     },
     {
       "id": "assistant-1",
       "role": "assistant",
-      "searchMomentId": "claude-workflow-depth",
-      "content": "A bigger ecosystem helps, but serious work is about finishing the job cleanly. Claude is not just a nice writer anymore: Anthropic is building developer workflows around Claude Code {{Anthropic is bringing Voice Mode to Claude Code, its AI coding assistant for developers}}(1), and Claude can pull workplace apps into the chat {{Claude users can call up workplace apps inside the chatbot interface, including Slack, Canva, Figma, Box, and Clay}}(2). That makes the Claude case practical, not just polished."
+      "searchMomentId": "claude-work-stack",
+      "content": "I get the one-place argument, but that version of Claude is a little out of date. Claude is now anchored around Sonnet 4.6 as the {{default model in Claude.ai and Claude Cowork}}(1), Team and Enterprise seats can put {{Claude and Claude Code under one subscription}}(2), and Slack can bring real work context into the conversation because Claude {{searches Slack channels, direct messages, and shared files}}(3). ChatGPT may still be broader, but Claude is not thin anymore."
     },
     {
       "id": "user-2",
       "role": "user",
-      "content": "Claude may write nicely, but serious work needs coding, file analysis, search, and team workflows in one place."
+      "content": "Maybe, but serious work is not just Slack and vibe. I need web search, docs, Gmail, code, and file work without constantly jumping between tabs or trusting a model that only sounds confident."
     },
     {
       "id": "assistant-2",
       "role": "assistant",
-      "searchMomentId": "claude-tools-in-one-place",
-      "content": "That is exactly why Claude is a stronger counterexample than it used to be. Coding is covered by Claude Code, which is being built for developer work {{Claude Code is Anthropic's coding assistant for developers}}(1). Team workflow is covered by interactive apps such as Slack, Figma, Box, and Clay inside Claude {{Anthropic's launch apps for Claude are mostly workplace tools}}(2). ChatGPT may still be broader, but the gap is not a wall."
-    },
-    {
-      "id": "user-3",
-      "role": "user",
-      "content": "If a company has to standardize, ChatGPT is safer because employees already know it and OpenAI keeps shipping integrations."
-    },
-    {
-      "id": "assistant-3",
-      "role": "assistant",
-      "searchMomentId": "claude-enterprise-safety",
-      "content": "Familiarity is useful, but safety is not the same as popularity. Anthropic has updated the principles that guide Claude's behavior {{Anthropic revised the set of principles used to guide Claude's behavior}}(1), and it is also putting frontier models into defensive security work with partners {{12 partner organizations are using a frontier model for defensive security work and critical software security}}(2). For standardizing, that is a real enterprise safety argument."
+      "searchMomentId": "claude-search-files-integrations",
+      "content": "Fair, but that is exactly where Claude has caught up in useful ways. Its search story is no longer stale because {{web search is now available globally on all Claude plans}}(1), its connector surface covers {{GitHub, Google Drive, Gmail, and Google Calendar integrations}}(2), and Sonnet 4.6 gives the app practical work surfaces like {{file creation, connectors, skills, and compaction}}(3). The better counter is not that Claude beats ChatGPT everywhere. It is that the gap is now narrow enough that quality, context, and follow-through can matter more than menu size."
     }
   ]
 };

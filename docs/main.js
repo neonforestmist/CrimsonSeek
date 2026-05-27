@@ -66,7 +66,9 @@ if (auditLayout && window.CRIMSONSEEK_AUDITS) {
   const audit = window.CRIMSONSEEK_AUDITS[requestedId] || window.CRIMSONSEEK_AUDITS["mac-windows"];
 
   auditState = buildAuditState(audit);
-  activeMomentId = params.get("moment") || auditState.searchMoments[0]?.id || null;
+  const requestedMoment = params.get("moment");
+  activeMomentId = requestedMoment || auditState.searchMoments[0]?.id || null;
+  sourcesOpen = Boolean(requestedMoment);
   const requestedSource = Number(params.get("source"));
   if (Number.isInteger(requestedSource) && requestedSource > 0) {
     activeSourceIndex = requestedSource - 1;
@@ -91,8 +93,13 @@ function renderExamples() {
       (count, moment) => count + visibleEvidence(moment.evidence).length,
       0
     );
+    const firstMoment = audit.searchMoments[0]?.id || "";
+    const auditHref = firstMoment
+      ? `./audit.html?id=${escapeAttribute(audit.arenaId)}&moment=${escapeAttribute(firstMoment)}&source=1#thread`
+      : `./audit.html?id=${escapeAttribute(audit.arenaId)}#thread`;
+
     return `
-      <a class="example-card audit-example-card" href="./audit.html?id=${escapeAttribute(audit.arenaId)}#thread">
+      <a class="example-card audit-example-card" href="${auditHref}">
         <span class="card-body">
           <span class="card-heading">
             <span class="arena-mark" aria-hidden="true">

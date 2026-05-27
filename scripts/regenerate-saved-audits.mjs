@@ -18,7 +18,6 @@ const configs = [
     turns: [
       "ChatGPT is better than Claude for serious work because it has the broader product ecosystem, tools, and everyday reliability.",
       "Claude may write nicely, but serious work needs coding, file analysis, search, and team workflows in one place.",
-      "If a company has to standardize, ChatGPT is safer because employees already know it and OpenAI keeps shipping integrations.",
     ],
   },
   {
@@ -28,9 +27,8 @@ const configs = [
     title: "Mac vs Windows",
     userPosition: "Macs are better than Windows PCs for most people.",
     turns: [
-      "Macs are better than Windows PCs for most people because the hardware is simpler, quieter, and lasts.",
-      "Most people do not need huge device choice. They need a machine that works cleanly with phones, photos, messages, and support.",
-      "Windows flexibility sounds nice, but the average buyer wants fewer decisions and fewer driver or update headaches.",
+      "Macs are better for most people because the buying decision is calmer. You pick a MacBook, it is quiet, fast, has great battery life, and you do not have to sort through a hundred Windows models.",
+      "Most people are not shopping for a gaming rig. They want their laptop to work with their phone, photos, messages, passwords, updates, and support without turning the computer into a side project.",
     ],
   },
   {
@@ -42,7 +40,6 @@ const configs = [
     turns: [
       "iPhone is better than Android for most people because the ecosystem is polished, secure, and predictable.",
       "Android choice is overrated when people mostly want great cameras, long updates, and apps that work well.",
-      "Resale value, accessories, Apple Stores, family features, and privacy make iPhone the lower-risk phone.",
     ],
   },
   {
@@ -54,7 +51,6 @@ const configs = [
     turns: [
       "AI will create more good jobs than it destroys because it raises productivity and creates new roles around automation.",
       "Exposure to AI does not mean replacement. It means workers can offload boring tasks and move up the value chain.",
-      "Companies and schools can retrain people, so the upside should outweigh the disruption.",
     ],
   },
   {
@@ -66,7 +62,6 @@ const configs = [
     turns: [
       "Schools should ban phones during the school day because students cannot focus with a social slot machine nearby.",
       "Exceptions make bans messy, but teachers need simple rules and a real break from notifications and group chats.",
-      "Digital self-control can wait. Classrooms should protect attention first.",
     ],
   },
   {
@@ -78,7 +73,6 @@ const configs = [
     turns: [
       "AI is worth the investment for most companies right now because the learning curve matters and tools are getting cheaper.",
       "Even small gains in writing, coding, support, analysis, and sales prep can justify licenses and training.",
-      "Companies that wait will lose process knowledge while competitors build habits, data pipelines, and governance.",
     ],
   },
 ];
@@ -176,7 +170,7 @@ async function requestDebateWithSources(arenaId, claim, messages) {
     const requestClaim =
       attempt === 0
         ? claim
-        : `${claim}\n\nFor this saved audit, match the user's length. This is a short claim, so keep the counter tight. Write in clear, natural language a smart 10th grader could follow first, then adapt to the user's tone if they are more technical, casual, or terse. Prefer ${PRIOR_YEAR}/${RECENT_YEAR} source material, current product/model/policy evidence, primary sources, benchmark pages, institutional research, official docs, reputable reporting, or hands-on testing. Avoid stale GPT-3, GPT-3.5, GPT-4, Claude 1/2/3, Opus 1/2/3, o3, o4-mini, o3-pro, unavailable, deprecated, legacy, or API-only references unless they are explicitly historical or developer/API-only. Do not invent model names, release names, version numbers, dates, prices, or benchmark scores; if you name one, it must appear verbatim in the source material you cite. Write human, coherent counterarguments with Gemini-authored inline citations in {{source material}}(1) format. Do not cite page titles, domains, source names, or URLs as source material. Do not use ellipses or broken source fragments.`;
+        : `${claim}\n\nFor this saved audit, match the user's length. This is a short claim, so keep the counter tight. Write in clear, natural language a smart 10th grader could follow first, then adapt to the user's tone if they are more technical, casual, or terse. Prefer ${PRIOR_YEAR}/${RECENT_YEAR} source material, current product/model/policy evidence, primary sources, benchmark pages, institutional research, official docs, reputable reporting, or hands-on testing. Avoid stale GPT-3, GPT-3.5, GPT-4, Claude 1/2/3, Opus 1/2/3, o3, o4-mini, o3-pro, unavailable, deprecated, legacy, or API-only references unless they are explicitly historical or developer/API-only. Do not invent model names, release names, version numbers, dates, prices, or benchmark scores; if you name one, it must appear verbatim in the source material you cite. Write human, coherent counterarguments with Gemini-authored inline citations in {{source material}}(1) format. The source material inside {{ }} must be a natural in-sentence anchor, usually 3-14 words and under 90 characters, not a pasted source sentence. Do not cite page titles, domains, source names, or URLs as source material. Do not use ellipses or broken source fragments.`;
     let data;
     try {
       data = await requestDebate(arenaId, requestClaim, messages);
@@ -290,6 +284,9 @@ function savedAuditQuality(data, arenaId) {
 }
 
 function citationMaterialLooksClean(material) {
+  if (material.length > 90) return false;
+  const words = material.trim().split(/\s+/).filter(Boolean).length;
+  if (words < 3 || words > 14) return false;
   if (/\u2026|\.{3,}/.test(material)) return false;
   if (/\b(?:https?:\/\/|www\.|[a-z0-9-]+\.(?:com|org|edu|gov|gov\.uk|ai|io|net|co)\b)/i.test(material)) {
     return false;

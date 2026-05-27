@@ -15,7 +15,7 @@ export function SiteHeader() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-ink/10 bg-[#fbf3ea]/90 backdrop-blur-xl lg:sticky">
-      <nav className="mx-auto flex h-14 max-w-[1160px] items-center justify-between gap-2 pl-3 pr-5 sm:px-6">
+      <nav className="mx-auto flex h-14 max-w-[1160px] items-center justify-between gap-1.5 px-3 sm:gap-2 sm:px-6">
         <div className="flex min-w-0 items-center gap-1.5 sm:gap-2">
           {homeHasDesktopSidebar && (
             <button
@@ -35,14 +35,14 @@ export function SiteHeader() {
             }`}
           >
             <ExploreMark />
-            <span className="truncate max-[360px]:hidden">CrimsonSeek</span>
+            <span className="truncate max-[640px]:hidden">CrimsonSeek</span>
           </Link>
         </div>
 
-        <div className="flex flex-shrink-0 items-center gap-1 sm:gap-3">
+        <div className="grid flex-shrink-0 grid-cols-[5.55rem_4.85rem_4.85rem] items-center gap-1.5 sm:flex sm:gap-3">
           <Link
             href="/examples"
-            className="inline-flex h-9 items-center rounded-full border border-divider/70 bg-white/70 px-2.5 text-[11px] font-semibold text-ink-soft transition-colors hover:border-accent-200 hover:text-ink sm:rounded-md sm:border-0 sm:bg-transparent sm:px-3 sm:py-2 sm:text-[12px] sm:uppercase sm:tracking-[0.16em]"
+            className="order-1 inline-flex h-10 w-full shrink-0 items-center justify-center rounded-full border border-divider/70 bg-white/70 px-0 text-[11px] font-semibold text-ink-soft transition-colors hover:border-accent-200 hover:text-ink sm:order-none sm:h-9 sm:w-auto sm:rounded-md sm:border-0 sm:bg-transparent sm:px-3 sm:py-2 sm:text-[12px] sm:uppercase sm:tracking-[0.16em]"
           >
             Examples
           </Link>
@@ -53,10 +53,10 @@ export function SiteHeader() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="CrimsonSeek GitHub repository"
-            className="inline-flex h-9 w-9 items-center justify-center gap-1.5 rounded-full bg-ink text-[13px] font-medium text-canvas shadow-[0_1px_2px_rgba(21,18,14,0.12)] transition-colors hover:bg-ink-soft sm:w-auto sm:px-3.5"
+            className="order-2 inline-flex h-10 w-full shrink-0 items-center justify-center gap-1.5 rounded-full bg-ink px-2 text-[12px] font-semibold text-canvas shadow-[0_1px_2px_rgba(21,18,14,0.12)] transition-colors hover:bg-ink-soft sm:order-none sm:h-9 sm:w-auto sm:px-3.5 sm:text-[13px] sm:font-medium"
           >
             <Github className="h-4 w-4" />
-            <span className="hidden sm:inline">GitHub</span>
+            <span>GitHub</span>
           </a>
 
           <a
@@ -64,11 +64,15 @@ export function SiteHeader() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Linkup"
-            className="inline-flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full border border-accent-200 bg-accent-50 text-accent-600 shadow-[0_1px_2px_rgba(150,47,24,0.08)] transition-colors hover:border-accent-300 hover:bg-white sm:w-auto sm:gap-2 sm:border-0 sm:bg-accent-500 sm:px-3.5 sm:text-white sm:shadow-[0_1px_2px_rgba(150,47,24,0.18),0_8px_18px_-12px_rgba(217,79,48,0.75)] sm:hover:bg-accent-600"
+            className="order-3 inline-flex h-10 w-full flex-shrink-0 items-center justify-center rounded-full border border-accent-200 bg-white/82 px-2 text-accent-500 shadow-[0_1px_2px_rgba(150,47,24,0.08)] transition-colors hover:border-accent-300 hover:bg-white sm:order-none sm:h-9 sm:w-auto sm:gap-2 sm:border-0 sm:bg-accent-500 sm:px-3.5 sm:text-white sm:shadow-[0_1px_2px_rgba(150,47,24,0.18),0_8px_18px_-12px_rgba(217,79,48,0.75)] sm:hover:bg-accent-600"
           >
             <LinkupLogo
+              variant="full"
+              className="h-[15px] w-[60px] flex-shrink-0 sm:hidden"
+            />
+            <LinkupLogo
               variant="icon"
-              className="h-[17px] w-[24px] flex-shrink-0"
+              className="hidden h-[18px] w-[26px] flex-shrink-0 sm:block"
             />
             <span className="hidden text-[13px] font-semibold sm:inline">Linkup</span>
             <ArrowUpRight className="hidden h-3.5 w-3.5 sm:block" strokeWidth={2.4} />

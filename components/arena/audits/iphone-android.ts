@@ -3,66 +3,58 @@ import type { DebateAudit } from "@/components/arena/audit-types";
 export const iphoneAndroidAudit: DebateAudit = {
   "arenaId": "iphone-android",
   "userPosition": "iPhone is better than Android for most people.",
-  "crimsonPosition": "CrimsonSeek argues the strongest current countercase in the iPhone vs Android debate, with source material woven directly into the reply.",
-  "verdict": "This saved iPhone vs Android audit keeps the countercase short, current, and source-backed without treating Android choice as automatic chaos.",
+  "crimsonPosition": "CrimsonSeek argues the current Android countercase with long support, security, repairability, price, and app-safety evidence.",
+  "verdict": "This saved iPhone vs Android audit treats Android choice as a concrete fit question rather than a vague preference for customization.",
   "searchMoments": [
     {
-      "id": "android-security-maturity",
-      "label": "Android security maturity",
-      "query": "iPhone vs Android counter-evidence on Android security patches, privacy upgrades, and predictable protection",
-      "summary": "Fresh Linkup check using Android security bulletins and current reporting on Android's 2026 security upgrades.",
+      "id": "android-security-and-updates",
+      "label": "Android security and updates",
+      "query": "current Android counter-evidence on Pixel Galaxy software support Android 16 security privacy iPhone comparison",
+      "summary": "Use official Pixel, Samsung, and Android sources to show that good Android phones are now long-support, security-forward devices rather than short-lived risky picks.",
       "evidence": [
         {
-          "title": "Android Security Bulletin-May 2026 | Android Open Source Project",
-          "url": "https://source.android.com/docs/security/bulletin/2026/2026-05-01",
-          "snippet": "The May 2026 Android Security Bulletin says patch levels dated 2026-05-01 or later address the listed vulnerabilities.",
+          "title": "Pixel 8 and Pixel 8 Pro to get 7 years of software updates",
+          "url": "https://blog.google/products/pixel/software-support-pixel-8-pixel-8-pro",
+          "snippet": "Google announced seven years of software support for Pixel 8 and Pixel 8 Pro, including Android OS upgrades, security updates, and regular Feature Drops.",
           "sourceQuality": "Primary or official source"
         },
         {
-          "title": "12 new security features coming to Android phones in 2026",
-          "url": "https://www.androidauthority.com/android-security-features-2026-3665372/",
-          "snippet": "Google's 2026 Android security and privacy upgrades include protections against banking scam calls, device theft, malware, and fake Android builds.",
-          "sourceQuality": "Editorial source"
+          "title": "Samsung Unveils Galaxy S26 Series",
+          "url": "https://news.samsung.com/us/samsung-unveils-galaxy-s26-series-most-intuitive-galaxy-ai-phone-yet/",
+          "snippet": "Samsung says the Galaxy S26 series is supported for seven generations of OS upgrades and seven years of security updates.",
+          "sourceQuality": "Primary or official source"
+        },
+        {
+          "title": "Android 16: Productivity, security and more features on Android",
+          "url": "https://blog.google/products-and-platforms/platforms/android/android-16/",
+          "snippet": "Google says Android 16 Advanced Protection bundles stronger defenses against harmful apps, unsafe sites, scam calls, and other risks.",
+          "sourceQuality": "Primary or official source"
         }
       ]
     },
     {
-      "id": "android-camera-and-hardware",
-      "label": "Android camera and hardware",
-      "query": "iPhone vs Android counter-evidence on Android cameras, flagship hardware, software support, and app quality",
-      "summary": "Fresh Linkup check using hands-on Android phone reviews to test whether Android still asks buyers to trade quality for choice.",
+      "id": "android-choice-repair-and-app-safety",
+      "label": "Android choice, repair, and app safety",
+      "query": "current Android counter-evidence on Pixel 10a price Fairphone repairability Google Play Protect app safety",
+      "summary": "Use recent official sources to frame Android choice as targeted fit: lower price, repairable hardware, and a monitored app ecosystem.",
       "evidence": [
         {
-          "title": "This is my new favorite camera phone and one of the best Android phones I've ever used",
-          "url": "https://www.androidauthority.com/oppo-find-x9-ultra-review-3661474/",
-          "snippet": "Android Authority said the OPPO Find X9 Ultra leapfrogged the best cameras from Apple, Google, and Samsung.",
-          "sourceQuality": "Editorial source"
+          "title": "Pixel 10a: Everything you need, at a price you'll love",
+          "url": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-10a/",
+          "snippet": "Google positions Pixel 10a as a $499 phone with core Pixel features and seven years of software updates.",
+          "sourceQuality": "Primary or official source"
         },
         {
-          "title": "Best Android Phones of 2026: Tested by Our Experts - CNET",
-          "url": "https://www.cnet.com/tech/mobile/best-android-phone/",
-          "snippet": "CNET's tested Android picks include phones with extremely capable cameras and enough power for everyday needs.",
-          "sourceQuality": "Editorial source"
-        }
-      ]
-    },
-    {
-      "id": "android-lower-risk",
-      "label": "Android lower risk",
-      "query": "iPhone vs Android counter-evidence on Android value, long software support, and lower-risk phone buying",
-      "summary": "Fresh Linkup check using current Android buyer guides on software support, Pixel pricing, and flagship longevity.",
-      "evidence": [
-        {
-          "title": "Best Android Phones of 2026: Tested by Our Experts - CNET",
-          "url": "https://www.cnet.com/tech/mobile/best-android-phone/",
-          "snippet": "CNET notes that Google and Samsung promise seven years of software updates on current flagship Android phones.",
-          "sourceQuality": "Editorial source"
+          "title": "Fairphone Gen. 6 press release",
+          "url": "https://www.fairphone.com/wp-content/uploads/2025/07/The-Fairphone-Gen.-6-Press-Release-Final.docx.pdf",
+          "snippet": "Fairphone says Gen. 6 has twelve easily replaceable parts, single-screwdriver repairs, software support through 2033, and a five-year warranty.",
+          "sourceQuality": "Primary or official source"
         },
         {
-          "title": "Best Google Pixel Phone to Buy in 2026 - CNET",
-          "url": "https://www.cnet.com/tech/mobile/best-google-pixel-phone/",
-          "snippet": "CNET says the Pixel 10A remains a 500 dollar option even as phones have become more expensive.",
-          "sourceQuality": "Editorial source"
+          "title": "How Google Play and Android app ecosystems stayed safe in 2025",
+          "url": "https://blog.google/products-and-platforms/platforms/google-play/how-we-kept-google-play-safe-in-2025/",
+          "snippet": "Google says Play Protect scans over 350 billion Android apps daily and its 2025 defenses blocked large numbers of policy-violating apps and bad developer accounts.",
+          "sourceQuality": "Primary or official source"
         }
       ]
     }
@@ -71,35 +63,24 @@ export const iphoneAndroidAudit: DebateAudit = {
     {
       "id": "user-1",
       "role": "user",
-      "content": "iPhone is better than Android for most people because the ecosystem is polished, secure, and predictable."
+      "content": "iPhone is still better for most people. You get long updates, better privacy defaults, less app-store sketchiness, and the whole thing feels predictable for families. Android has improved, but unless you buy the right model, you can end up with delayed updates or random security gaps."
     },
     {
       "id": "assistant-1",
       "role": "assistant",
-      "searchMomentId": "android-security-maturity",
-      "content": "iPhone predictability is nice, but Android is not the messy security gamble people remember. Android publishes regular security bulletins with specific patch levels {{patch levels dated 2026-05-01 or later address the listed Android vulnerabilities}}(1), and Google's 2026 upgrades target scams, theft, malware, and fake builds {{Android security and privacy upgrades include protections against banking scam calls, device theft, malware, and fake Android builds}}(2). Predictable is not the same as automatically safer."
+      "searchMomentId": "android-security-and-updates",
+      "content": "That used to be the cleanest iPhone argument, but it is not as one-sided anymore. A current Pixel or Galaxy is a long-support phone now, not a short-term gamble: {{Pixel 8 phones get seven years of software support}}(1), {{Galaxy flagships get seven OS generations}}(2), and {{Android 16 bundles stronger protection against scams and unsafe apps}}(3). The better distinction is not iPhone safe, Android risky. It is good Androids are mature, bad Androids are still a bad bet."
     },
     {
       "id": "user-2",
       "role": "user",
-      "content": "Android choice is overrated when people mostly want great cameras, long updates, and apps that work well."
+      "content": "Where iPhone still feels safer to me is the actual buying decision. I can recommend one to my parents and not worry about the carrier model, bloatware, weird skins, repair headaches, or whether the camera and apps will feel second-rate in two years."
     },
     {
       "id": "assistant-2",
       "role": "assistant",
-      "searchMomentId": "android-camera-and-hardware",
-      "content": "Those priorities are reasonable, but Android now competes directly on them. Reviewers say the OPPO Find X9 Ultra jumped ahead of the best camera phones from Apple, Google, and Samsung {{the OPPO Find X9 Ultra leapfrogged the best cameras from Apple, Google, and Samsung}}(1). CNET's Android picks also include phones with strong cameras and enough power for normal use {{tested Android phones include extremely capable cameras and enough power for everyday needs}}(2). Choice matters when the choices are good."
-    },
-    {
-      "id": "user-3",
-      "role": "user",
-      "content": "Resale value, accessories, Apple Stores, family features, and privacy make iPhone the lower-risk phone."
-    },
-    {
-      "id": "assistant-3",
-      "role": "assistant",
-      "searchMomentId": "android-lower-risk",
-      "content": "iPhone may still win on resale and stores, but the risk gap is smaller now. Google and Samsung promise long support on current flagships {{Google and Samsung promise seven years of software updates on current flagship Android phones}}(1), and Android buyers can still choose cheaper current options {{the Pixel 10A remains a 500 dollar option even as phones have become more expensive}}(2). Lower risk is not only about brand; it is also about support and price."
+      "searchMomentId": "android-choice-repair-and-app-safety",
+      "content": "That is fair, but it argues for better Android recommendations, not for writing Android off. The current Android countercase is not 'buy anything.' It is 'pick the lane that matches the risk.' If price matters, {{Pixel 10a keeps the long-support Pixel path at $499}}(1). If repairs matter, {{Fairphone Gen. 6 offers twelve replaceable parts}}(2). If app safety matters, {{Play Protect scans over 350 billion Android apps daily}}(3). iPhone is simpler to recommend, but Android can be the smarter fit when cost, repairability, privacy posture, or device choice actually matters."
     }
   ]
 };
